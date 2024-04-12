@@ -1,0 +1,137 @@
+<FTL>
+    <event name="GOF_WEAPON_TRADE">
+        <preventQuest />
+        <beaconType id="map_icon_gof_wt" global="true">
+            <color r="65" g="65" b="65"/>
+        </beaconType>
+        <text>You arrive at the beacon face to face with a strange looking ship.
+
+You're greeted by a human in an odd looking uniform, "Hello, we appear to have gotten lost, we were trying to jump to the Weymire system but something went wrong in our jump drive and we ended up here.
+We would appreciate it if you could spare us any supplies for repairs."</text>
+        <ship load="SHIP_GOF_ANAAN" hostile="false"/>
+        <choice>
+            <text>Trade Fuel for a weapon</text>
+            <event>
+                <text>You dock with the ship and transfer the supplies.</text>
+                <item_modify>
+                    <item type="fuel" min="-3" max="-5" />
+                </item_modify>
+                <weapon name="LIST_WEAPONS_GOF_SMALL" />
+                <choice>
+                    <text>Do something onboard the ship.</text>
+                    <event load="STORAGE_CHECK" />
+                </choice>
+                <choice>
+                    <text>Do nothing.</text>
+                    <event />
+                </choice>
+            </event>
+        </choice>
+        <choice>
+            <text>Trade Missiles for a weapon</text>
+            <event>
+                <text>You dock with the ship and transfer the supplies.</text>
+                <item_modify>
+                    <item type="missiles" min="-3" max="-5" />
+                </item_modify>
+                <weapon name="LIST_WEAPONS_GOF_SMALL" />
+                <choice>
+                    <text>Do something onboard the ship.</text>
+                    <event load="STORAGE_CHECK" />
+                </choice>
+                <choice>
+                    <text>Do nothing.</text>
+                    <event />
+                </choice>
+            </event>
+        </choice>
+        <choice>
+            <text>Trade Drone Parts for a weapon</text>
+            <event>
+                <text>You dock with the ship and transfer the supplies.</text>
+                <item_modify>
+                    <item type="drones" min="-3" max="-5" />
+                </item_modify>
+                <weapon name="LIST_WEAPONS_GOF_SMALL" />
+                <choice>
+                    <text>Do something onboard the ship.</text>
+                    <event load="STORAGE_CHECK" />
+                </choice>
+                <choice>
+                    <text>Do nothing.</text>
+                    <event />
+                </choice>
+            </event>
+        </choice>
+        <choice>
+            <text>Attack the ship.</text>
+            <event>
+                <ship hostile="true"/>
+                <text>You don't know who they are, but 20 scrap is 20 scrap.</text>
+                <choice hidden="true">
+                    <text>Continue...</text>
+                    <event load="COMBAT_CHECK" />
+                </choice>
+            </event>
+        </choice>
+        <choice>
+            <text>Ignore the ship.</text>
+            <event>
+                <text>You fly away and wait for you jump drive to recharge.</text>
+                <choice>
+                    <text>Do something onboard the ship.</text>
+                    <event load="STORAGE_CHECK" />
+                </choice>
+                <choice>
+                    <text>Do nothing.</text>
+                    <event />
+                </choice>
+            </event>
+        </choice>
+    </event>
+
+    <ship name="SHIP_GOF_ANAAN" auto_blueprint="GOF_ANAAN" >
+        <surrender chance="0.6" min="2" max="4" load="SURRENDER_GOF_ANAAN_TRADEE" />
+        <destroyed load="DESTROYED_GOF_ANAAN_TRADE" />
+        <deadCrew load="DEAD_CREW_GOF_ANAAN_TRADE" />
+    </ship>
+
+    <event name="DESTROYED_GOF_ANAAN_TRADE">
+        <text>It appears their ship was almost completely destroyed in the battle, leaving very little to scrap.
+
+However you manage to find a weapon hiding amongst the wreckage.</text>
+        <weapon name="LIST_WEAPONS_GOF_MEDIUM"/>
+        <choice>
+            <text>Continue...</text>
+            <event />
+        </choice>
+    </event>
+    <event name="DEAD_CREW_GOF_ANAAN_TRADE">
+        <text>You scrap what you can from the ship, and in the process you manage to find a weapon hiding amongst the wreckage.</text>
+        <autoReward level="LOW">standard</autoReward>
+        <weapon name="LIST_WEAPONS_GOF_MEDIUM"/>
+        <choice>
+            <text>Continue...</text>
+            <event />
+        </choice>
+    </event>
+    <event name="SURRENDER_GOF_ANAAN_TRADEE">
+        <text>"Please, we don't have much but you can have this weapon if you just let us live."</text>
+        <choice>
+            <text>Accept their surrender.</text>
+            <event>
+                <text>The ship expels a weapon from their airlock before retreating to a safe distance.</text>
+                <weapon name="LIST_WEAPONS_GOF_SMALL"/>
+                <ship hostile="false"/>
+                <choice>
+                    <text>Continue...</text>
+                    <event />
+                </choice>
+            </event>
+        </choice>
+        <choice>
+            <text load="GENERIC_SURRENDER_CHOICE_NOMERCY" />
+            <event />
+        </choice>
+    </event>
+</FTL>

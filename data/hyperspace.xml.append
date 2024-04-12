@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+<mod:findLike type="scripts">
+  <mod-append:script>data/gof_scripts/gof_weapon_functions.lua</mod-append:script>
+  <mod-append:script>data/gof_scripts/gof_ai_functions.lua</mod-append:script>
+</mod:findLike>
+
+<mod:findLike type="ships">
+  	<mod:findLike type="shipOrder">
+		<mod-append:ship>PLAYER_SHIP_GOF_ANAAN</mod-append:ship>
+		<mod-append:empty />
+		<mod-append:empty />
+		<mod-append:empty />
+			<!-- -->
+		<mod-append:empty />
+		<mod-append:empty />
+		<mod-append:empty />
+		<mod-append:empty />
+
+		<mod-append:empty />
+		<mod-append:empty />
+	</mod:findLike>
+	<mod-append:ship name="PLAYER_SHIP_GOF_ANAAN" b="true" c="true" >
+		<unlock variant="b" silent="false">
+		<type>1</type>
+			<shipReq>PLAYER_SHIP_GOF_ANAAN</shipReq>
+		<value>5</value>
+		</unlock>
+		<unlock variant="c" silent="false">
+		<type>1</type>
+			<shipReq>PLAYER_SHIP_GOF_ANAAN_2</shipReq>
+		<value>5</value>
+		</unlock>
+		<unlock variant="c" silent="false">
+		<type>2</type>
+			<shipReq>PLAYER_SHIP_GOF_ANAAN</shipReq>
+		</unlock>
+	</mod-append:ship>
+
+	<mod-append:customShip name="PLAYER_SHIP_GOF_ANAAN">
+		<hiddenAug>SHIP_KESTREL</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+	</mod-append:customShip>
+	<mod-append:customShip name="PLAYER_SHIP_GOF_ANAAN_2">
+		<hiddenAug>SHIP_KESTREL</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+	</mod-append:customShip>
+	<mod-append:customShip name="PLAYER_SHIP_GOF_ANAAN_3">
+		<hiddenAug>SHIP_KESTREL</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+	</mod-append:customShip>
+
+	<mod-append:customShip name="GOF_ANAAN">
+		<crew>
+		<human_terran room="0"/>
+		<human_terran room="3"/>
+		<human_medic room="2"/>
+		<human_terran_pyro room="8"/>
+		</crew>
+	</mod-append:customShip>
+</mod:findLike>
+
+<crew>
+  <race name="human_terran">
+		<damageMultiplier>1.6</damageMultiplier>
+		<fireDamageMultiplier>0.83</fireDamageMultiplier>
+		<suffocationModifier>0.83</suffocationModifier>
+		<animBase>human</animBase>
+		<defaultSkillLevel>1</defaultSkillLevel>
+		<cloneLoseSkills>false</cloneLoseSkills>
+		<passiveStatBoosts>  
+			<statBoost name="statBoost">
+				<statBoost name="damageTakenMultiplier">
+                    <boostType>FLAT</boostType>
+					<amount>-0.13</amount>
+                    <shipTarget>CURRENT_ROOM</shipTarget>
+                    <crewTarget>ENEMIES</crewTarget>
+					<whiteList>
+						<human_terran />
+					</whiteList>
+                </statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="moveSpeedMultiplier">
+                    <boostType>FLAT</boostType>
+					<amount>0.10</amount>
+                    <shipTarget>CURRENT_ROOM</shipTarget>
+                    <crewTarget>ENEMIES</crewTarget>
+					<whiteList>
+						<human_terran />
+					</whiteList>
+                </statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+			</statBoost>
+		</passiveStatBoosts>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>humanDeathSpecial</deathSound>
+		</deathSounds>
+	</race>
+	<race name="human_terran_pyro">
+		<suffocationModifier>0.83</suffocationModifier>
+		<damageMultiplier>1.25</damageMultiplier>
+		<damageTakenMultiplier>0.80</damageTakenMultiplier>
+		<rangedDamageMultiplier>0.30</rangedDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<canBurn>false</canBurn>
+		<animBase>mantis</animBase>
+		<cloneLoseSkills>false</cloneLoseSkills>
+		<shootingSounds>
+			<shootingSound>nothing</shootingSound>
+		</shootingSounds>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>humanDeathSpecial</deathSound>
+		</deathSounds>
+		<powerEffect>
+			<cooldown>9</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
+			<req>
+				<enemyInRoom />
+			</req>
+			<fireChance>9</fireChance>
+			<buttonText>FIRE</buttonText>
+			<tooltip>Ready: Starts fires</tooltip>
+			<cooldownColor r="45" g="200" b="75" />
+			<activateWhenReady>true</activateWhenReady>
+		</powerEffect>
+	</race>
+</crew>
+
+<events>
+	<variable name="gofEnemyHull" op="set" val="0"/>
+	<variable name="gofEnemyShield" op="set" val="0"/>
+	<variable name="gofPlayerHull" op="set" val="0"/>
+	<variable name="gofPlayerShield" op="set" val="0"/>
+  	<bossShip yOffset="-20">GOF_ANAAN</bossShip>
+  	<eventFile>special_gof</eventFile>
+</events>
+<!-- end of chunk -->
+</FTL>

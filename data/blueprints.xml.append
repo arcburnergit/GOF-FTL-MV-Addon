@@ -1,0 +1,1276 @@
+<FTL>
+<weaponBlueprint name="GOF_CHAIN_SHOT"> 
+	<type>LASER</type>
+	<flavorType>Pulse Cannon</flavorType>
+	<title>Nirai Impulse EX 1</title>
+	<short>Impulse EX 1</short>
+	<tip>tip_gof_pulse</tip>
+	<desc>"The Nirai company once specialized in low cost, mass-market productions. Unfortunately, there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."</desc>
+	<tooltip>Pulse laser; 1 damage, 1 base shot. 6 second base cooldown. Cooldown increases by 3 and shots increase by 1 per volley.</tooltip>
+	<descriptionOverride>"The Nirai company once specialized in low cost, mass-market productions. Unfortunately, there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."
+
+Stats:
+Required Power: 1
+Charge Time: 6 seconds
+Chain Effect: Increases Shots by 1 and cooldown by 3
+Max Chains: 1
+Shots Per Charge: 1
+
+Base Hull Damage: 1
+Total System Damage: 1
+Total Crew Damage: 15
+Fire Change: 10%
+
+Default Price: 50~   -   Selling Price:25~
+	</descriptionOverride>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>2</bp>
+	<rarity>2</rarity>
+	<image>laser_pulse</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>-3</amount>
+		<count>1</count>
+	</boost>
+	<launchSounds>
+		<sound>gofpulsefire1</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_laser_shot_chain</weaponArt> 
+	<iconImage>laser_chain</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_CHAIN_SHOT_2"> 
+	<type>LASER</type>
+	<flavorType>Pulse Cannon</flavorType>
+	<title>Nirai Impulse EX 2</title>
+	<short>Impulse EX 2</short>
+	<tip>tip_gof_pulse</tip>
+	<desc>"The Nirai company once specialized in low cost mass-market prodiuctions. Unfortunately there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."</desc>
+	<tooltip>Pulse laser; 1 damage, 1 base shot. 6 second base cooldown. Cooldown increases by 3 and shots increase by 1 per volley.</tooltip>
+	<descriptionOverride>"The Nirai company once specialized in low cost mass-market prodiuctions. Unfortunately there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."
+
+Stats:
+Required Power: 2
+Charge Time: 6 seconds
+Chain Effect: Increases Shots by 1 and cooldown by 3
+Max Chains: 2
+Shots Per Charge: 1
+
+Base Hull Damage: 1
+Total System Damage: 1
+Total Crew Damage: 15
+Fire Change: 10%
+
+Default Price: 60~   -   Selling Price:30~
+	</descriptionOverride>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>3</rarity>
+	<image>laser_pulse</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>-3</amount>
+		<count>2</count>
+	</boost>
+	<launchSounds>
+		<sound>gofpulsefire2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_laser_shot_chain_2</weaponArt> 
+	<iconImage>laser_chain</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_CHAIN_SHOT_3"> 
+	<type>LASER</type>
+	<flavorType>Pulse Cannon</flavorType>
+	<title>Nirai Charged Pulse</title>
+	<short>Charged Pulse</short>
+	<tip>tip_gof_pulse</tip>
+	<desc>"This rather old laser was manufactured by the now defunct Nirai company. It was created many years ago as its flagship pulse laser weapon. It used to be priceless but has decreased in value over the years and is now pretty affordable."</desc>
+	<tooltip>Pulse laser; 1 damage, 1 base shot. 7 second base cooldown. Cooldown increases by 2 and shots increase by 1 per volley.</tooltip>
+	<descriptionOverride>"This rather old laser was manufactured by the now defunct Nirai company. It was created many years ago as its flagship pulse laser weapon. It used to be priceless but has decreased in value over the years and is now pretty affordable."
+
+Stats:
+Required Power: 3
+Charge Time: 7 seconds
+Chain Effect: Increases Shots by 1 and cooldown by 2
+Max Chains: 3
+
+Shots Per Charge: 1
+
+Base Hull Damage: 2
+Total System Damage: 2
+Total Crew Damage: 15
+
+Fire Change: 10%
+
+Default Price: 70~   -   Selling Price:35~
+	</descriptionOverride>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>7</cooldown>
+	<power>3</power>
+	<cost>70</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>laser_pulse</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>-2</amount>
+		<count>3</count>
+	</boost>
+	<launchSounds>
+		<sound>gofpulsefire3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_laser_shot_chain_3</weaponArt> 
+	<iconImage>laser_chain</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_THERMO_1">
+	<type>BURST</type>
+	<flavorType>Thermal Fusion Cannon</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Thermic o5</title>
+	<short>Thermic o5</short>
+	<tip>tip_gof_thermo</tip>
+	<desc>"Thermal Fusion weapons are the latest craze. Some describe them as confetti spinners, others swear by them and never leave dock without them. The o5 is the basic model, so anyone interested in Thermal Fusion can find out if they can handle these powerful weapons."</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 3 damage.</tooltip>
+	<radius>45</radius>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>16</cooldown>
+	<power>1</power>
+	<cost>45</cost>
+	<bp>10</bp>
+	<speed>40</speed>
+	<rarity>3</rarity>
+	<projectiles>
+		<projectile count="3" fake="false">laser_thermo</projectile>
+		<projectile count="9" fake="true">laser_thermo</projectile>
+	</projectiles>
+    <boost>
+		<type>cooldown</type>
+		<amount>8</amount>
+		<count>1</count>
+	</boost>
+	<launchSounds>
+		<sound>gofthermofire1</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_thermo_1</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_THERMO_2">
+	<type>BURST</type>
+	<flavorType>Thermal Fusion Cannon</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>ReHeat o10</title>
+	<short>ReHeat o10</short>
+	<tip>tip_gof_thermo</tip>
+	<desc>"The big brother of the Thermic o5 supposedly has solar particles from the Weymire System installed within it, giving it slightly increased power. Doubters claim these apparently expensive particles are actually produced very cheaply in the lab, which naturally reduces the weapon's value."</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 5 damage.</tooltip>
+	<radius>45</radius>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>10</bp>
+	<speed>40</speed>
+	<rarity>3</rarity>
+	<projectiles>
+		<projectile count="5" fake="false">laser_thermo</projectile>
+		<projectile count="15" fake="true">laser_thermo</projectile>
+	</projectiles>
+    <boost>
+		<type>cooldown</type>
+		<amount>10</amount>
+		<count>1</count>
+	</boost>
+	<launchSounds>
+		<sound>gofthermofire2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_thermo_2</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_THERMO_3">
+	<type>BURST</type>
+	<flavorType>Thermal Fusion Cannon</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>MaxHeat o20</title>
+	<short>MaxHeat o20</short>
+	<tip>tip_gof_thermo</tip>
+	<desc>"Only the MaxHeat contains the essences of sun particles from 12 different systems. Their special composition is triggered with electrical stimulation to unleash a continuous chain reaction, allowing for an unprecedented rate of fire."</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 8 damage.</tooltip>
+	<radius>45</radius>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>22</cooldown>
+	<power>3</power>
+	<cost>70</cost>
+	<bp>10</bp>
+	<speed>40</speed>
+	<rarity>4</rarity>
+	<projectiles>
+		<projectile count="8" fake="false">laser_thermo</projectile>
+		<projectile count="24" fake="true">laser_thermo</projectile>
+	</projectiles>
+    <boost>
+		<type>cooldown</type>
+		<amount>10</amount>
+		<count>1</count>
+	</boost>
+	<launchSounds>
+		<sound>gofthermofire3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_thermo_3</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_SCATTER_1">
+	<type>BURST</type>
+	<flavorType>Scatter Gun</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Nirai .50AS</title>
+	<short>Nirai .50AS</short>
+	<tip>tip_gof_scatter</tip>
+	<desc>"As a response to the increasing number of pirate attacks, a new type of weapon was developed that is especially well-suited to eliminate smaller groups of opponents while also presenting an inexpensive alternative to bombs. The projectiles have an approach sensor that ignites an explosive charge of plasma when activated."</desc>
+	<tooltip>Fires 2 shots capable of doing up to 4 damage.</tooltip>
+	<radius>30</radius>
+	<damage>1</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+    <spin>1080</spin>
+	<cost>55</cost>
+	<bp>10</bp>
+    <accuracyBonus>20</accuracyBonus>
+	<speed>30</speed>
+	<rarity>2</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">gof_scatter_1_shot</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>gofpulsefire2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_scatter_1</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_SCATTER_1_PROJECTILE">
+    <type>LASER</type>
+	<title>Nirai .50AS</title>
+	<short>Nirai .50AS</short>
+	<tip>tip_laser</tip>
+	<desc id="weapon_LASER_BURST_1_desc" />
+	<tooltip id="weapon_LASER_BURST_1_tooltip" />
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<speed>30</speed>
+	<cost>20</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>gof_scatter_1_shot</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_SCATTER_2">
+	<type>BURST</type>
+	<flavorType>Scatter Gun</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Berger FlaK 9-9</title>
+	<short>FlaK 9-9</short>
+	<tip>tip_gof_scatter</tip>
+	<desc>"Having already demonstrated its competitiveness in the laser industry, the Berger company has now developed a FlaK weapon superior to the Nirai model, thereby harking back to their milleniums-old family tradition. The name of this weapon is a tribute to the excellent craftsmanship of the Berger ancestors."</desc>
+	<tooltip>Fires 2 shots capable of doing up to 6 damage.</tooltip>
+	<radius>25</radius>
+	<damage>1</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+    <accuracyBonus>30</accuracyBonus>
+	<cooldown>12</cooldown>
+	<power>3</power>
+    <spin>1080</spin>
+	<cost>65</cost>
+	<bp>10</bp>
+	<speed>30</speed>
+	<rarity>2</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">gof_scatter_2_shot</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>gofpulsefire2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_scatter_2</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_SCATTER_2_PROJECTILE">
+    <type>LASER</type>
+	<title>Nirai .50AS</title>
+	<short>Nirai .50AS</short>
+	<tip>tip_laser</tip>
+	<desc id="weapon_LASER_BURST_1_desc" />
+	<tooltip id="weapon_LASER_BURST_1_tooltip" />
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<speed>30</speed>
+	<cost>20</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>gof_scatter_2_shot</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_SCATTER_3">
+	<type>BURST</type>
+	<flavorType>Scatter Gun</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Icarus Heavy AS</title>
+	<short>Heavy AS</short>
+	<tip>tip_gof_scatter</tip>
+	<desc>"When this weapon's destructive potential became apparent on the field of battle, a law was created to prohibit its civil and military use. Since then, its deployment has violated all war conventions. Although nearly all stockpiles were destroyed in compliance, a few arms traders managed to steal the blueprint."</desc>
+	<tooltip>Fires 4 shots capable of doing up to 8 damage.</tooltip>
+	<radius>25</radius>
+	<damage>1</damage>
+	<shots>4</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+    <accuracyBonus>40</accuracyBonus>
+	<cooldown>16</cooldown>
+	<power>3</power>
+    <spin>1080</spin>
+	<cost>75</cost>
+	<bp>10</bp>
+	<speed>30</speed>
+	<rarity>2</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">gof_scatter_3_shot</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>gofpulsefire2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_scatter_3</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_SCATTER_3_PROJECTILE">
+    <type>LASER</type>
+	<title>Nirai .50AS</title>
+	<short>Nirai .50AS</short>
+	<tip>tip_laser</tip>
+	<desc id="weapon_LASER_BURST_1_desc" />
+	<tooltip id="weapon_LASER_BURST_1_tooltip" />
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<speed>30</speed>
+	<cost>20</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>gof_scatter_3_shot</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_BEAM_1">
+	<type>BEAM</type>
+	<flavorType>Beam Laser</flavorType>
+	<title>M6 A1 "Wolf"</title>
+	<short>"Wolf"</short>
+	<tip>tip_gof_beam</tip>
+	<desc>"The M6 Series of beam lasers release a tremendous amount of energy, which almost immediately dispatch any target. Unfortunately, the M6 Series cannot match the fast reload time of pulse laser weapons."</desc>
+	<tooltip>Fires 1 beam that does 2 damage, and 1 damage to shields.</tooltip>
+	<damage>2</damage>
+	<sp>-10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>8</cooldown>
+	<speed>1</speed>
+	<power>1</power>
+	<cost>46</cost>
+	<bp>7</bp>
+	<rarity>3</rarity>
+	<color>
+		<r>171</r>
+		<g>255</g>
+		<b>149</b>
+	</color>
+	<length>1</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>gofbeamfire1</sound>
+	</launchSounds>
+	<weaponArt>gof_beam_1</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_BEAM_2">
+	<type>BEAM</type>
+	<flavorType>Beam Laser</flavorType>
+	<title>M6 A2 "Cougar"</title>
+	<short>"Cougar"</short>
+	<tip>tip_gof_beam</tip>
+	<desc>"Beam weapons are the sniper rifles of the cannon world. To use a beam weapon effectively, you must aim carefully. Their rate of fire is low, but the damage they inflict is enormous!"</desc>
+	<tooltip>Fires 1 beam that does 4 damage, and 2 damage to shields.</tooltip>
+	<damage>4</damage>
+	<sp>-10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<speed>1</speed>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>7</bp>
+	<rarity>3</rarity>
+	<color>
+		<r>0</r>
+		<g>147</g>
+		<b>255</b>
+	</color>
+	<length>1</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>gofbeamfire2</sound>
+	</launchSounds>
+	<weaponArt>gof_beam_2</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_BEAM_3">
+	<type>BEAM</type>
+	<flavorType>Beam Laser</flavorType>
+	<title>M6 A3 "Wolverine"</title>
+	<short>"Wolverine"</short>
+	<tip>tip_gof_beam</tip>
+	<desc>"Beam weapons are the sniper rifles of the cannon world. A good aim is rewarded with the greatest penetrating power of all automatic primary weapons."</desc>
+	<tooltip>Fires 1 beam that does 8 damage, and 4 damage to shields.</tooltip>
+	<damage>6</damage>
+	<sp>-12</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>16</cooldown>
+	<speed>1</speed>
+	<power>3</power>
+	<cost>76</cost>
+	<bp>7</bp>
+	<rarity>4</rarity>
+	<color>
+		<r>243</r>
+		<g>124</g>
+		<b>128</b>
+	</color>
+	<length>1</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>gofbeamfire3</sound>
+	</launchSounds>
+	<weaponArt>gof_beam_3</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_HEAVY_0">
+	<type>BURST</type>
+	<flavorType>Focus Laser</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Berger Focus I</title>
+	<short>Focus I</short>
+	<tip>tip_gof_heavy</tip>
+	<desc>"The Berger company is one of the pioneers of stellar weapons technology, including lasers. The company flooded the market every 50 years with a series of new weapons in various designs to suit every budget."</desc>
+	<tooltip>Fires 1 shots capable of doing 2 damage.</tooltip>
+	<radius>10</radius>
+	<damage>2</damage>
+	<sysDamage>-1</sysDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>5</cooldown>
+	<power>1</power>
+	<cost>35</cost>
+	<bp>10</bp>
+    <accuracyBonus>10</accuracyBonus>
+	<speed>50</speed>
+	<rarity>4</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">laser_pulse</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>gofheavyfire0</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_heavy_0</weaponArt> 
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_HEAVY_1">
+	<type>BURST</type>
+	<flavorType>Focus Laser</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Berger Focus II A1</title>
+	<short>Focus II A1</short>
+	<tip>tip_gof_heavy</tip>
+	<desc>"The Berger company is one of the pioneers of stellar weapons technology, including lasers. The company flooded the market every 50 years with a series of new weapons in various designs to suit every budget."</desc>
+	<tooltip>Fires 3 shots capable of doing 2 damage each.</tooltip>
+	<radius>10</radius>
+	<damage>2</damage>
+	<sysDamage>-1</sysDamage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>14</cooldown>
+	<power>1</power>
+	<cost>45</cost>
+	<bp>10</bp>
+    <accuracyBonus>10</accuracyBonus>
+	<speed>50</speed>
+	<rarity>3</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">laser_pulse</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>gofheavyfire1</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_heavy_1</weaponArt> 
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_HEAVY_2">
+	<type>BURST</type>
+	<flavorType>Focus Laser</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Berger Retribution</title>
+	<short>Retribution</short>
+	<tip>tip_gof_heavy</tip>
+	<desc>"This relatively strong laser gun from the Berger company has one of the fastest rates of fire on the market, second only to the Converge series of weapons."</desc>
+	<tooltip>Fires 4 shots capable of doing 2 damage each.</tooltip>
+	<radius>10</radius>
+	<damage>2</damage>
+	<sysDamage>-1</sysDamage>
+	<shots>4</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>16</cooldown>
+	<power>2</power>
+	<cost>55</cost>
+	<bp>10</bp>
+    <accuracyBonus>10</accuracyBonus>
+	<speed>50</speed>
+	<rarity>3</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">laser_pulse</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>gofheavyfire2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_heavy_2</weaponArt> 
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_HEAVY_3">
+	<type>BURST</type>
+	<flavorType>Focus Laser</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Berger Converge IV</title>
+	<short>Converge IV</short>
+	<tip>tip_gof_heavy</tip>
+	<desc>"The Berger company introduced the Converge series of powerful laser pulse weapons to the market a few years ago. Although the technology is currently being replaced by the more powerful Blaster series, the Converge remains popular with all races."</desc>
+	<tooltip>Fires 6 shots capable of doing 2 damage each.</tooltip>
+	<radius>10</radius>
+	<damage>2</damage>
+	<sysDamage>-1</sysDamage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>17</cooldown>
+	<power>3</power>
+	<cost>70</cost>
+	<bp>10</bp>
+    <accuracyBonus>10</accuracyBonus>
+	<speed>50</speed>
+	<rarity>4</rarity>
+	<projectiles>
+		<projectile count="2" fake="false">laser_pulse</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>gofheavyfire3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_heavy_3</weaponArt> 
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_CANNON_1"> 
+	<type>LASER</type>
+	<flavorType>Auto-Cannon</flavorType>
+	<title>Micro Gun MKI</title>
+	<short>Micro I</short>
+	<tip>tip_gof_cannon</tip>
+	<desc>"Even 2000 years after their invention, ballistic weapons still haven't disappeared from the scene. The Micro Guns from this category of weapon are very good value."</desc>
+	<tooltip>Fires 1 shot every 1 second, every 5th shot does 1 damage.</tooltip>
+	<descriptionOverride>"Even 2000 years after their invention, ballistic weapons still haven't disappeared from the scene. The Micro Guns from this category of weapon are very good value."
+
+Stats:
+Required Power: 1
+Charge Time: 1 second
+
+Shots Per Charge: 1
+
+Base Hull Damage: 0.2
+Total System Damage: 0.2
+Total Crew Damage: 3
+
+Fire Change: 10%
+
+Default Price: 30~   -   Selling Price:15~
+	</descriptionOverride>
+	<damage>0</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>1</cooldown>
+	<power>1</power>
+	<cost>30</cost>
+	<bp>2</bp>
+	<rarity>3</rarity>
+	<image>laser_drone</image>
+	<launchSounds>
+		<sound>gofcannonfire1</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_cannon_1</weaponArt> 
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_CANNON_2"> 
+	<type>LASER</type>
+	<flavorType>Auto-Cannon</flavorType>
+	<title>Micro Gun MKII</title>
+	<short>Micro II</short>
+	<tip>tip_gof_cannon</tip>
+	<desc>"Even 2000 years after their invention, ballistic weapons still haven't disappeared from the scene. The Micro Guns from this category of weapon are very good value."</desc>
+	<tooltip>Fires 1 shot every 1 second, every 3rd shot does 1 damage.</tooltip>
+	<descriptionOverride>"Even 2000 years after their invention, ballistic weapons still haven't disappeared from the scene. The Micro Guns from this category of weapon are very good value."
+
+Stats:
+Required Power: 2
+Charge Time: 1 second
+
+Shots Per Charge: 1
+
+Base Hull Damage: 0.34
+Total System Damage: 0.34
+Total Crew Damage: 5
+
+Fire Change: 10%
+
+Default Price: 40~   -   Selling Price:20~
+	</descriptionOverride>
+	<damage>0</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>1</cooldown>
+	<power>2</power>
+	<cost>40</cost>
+	<bp>2</bp>
+	<rarity>3</rarity>
+	<image>laser_drone</image>
+	<launchSounds>
+		<sound>gofcannonfire2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_cannon_2</weaponArt> 
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_CANNON_3"> 
+	<type>LASER</type>
+	<flavorType>Auto-Cannon</flavorType>
+	<title>Scram Cannon</title>
+	<short>Scram</short>
+	<tip>tip_gof_cannon</tip>
+	<desc>"The Scram Cannon is one of the fastest firing guns in the market. The technology is so simple that anyone could build one of these weapons from scratch, but it is still preferable to get an original design, handmade by droids."</desc>
+	<tooltip>Fires 1 shot every 1 second, every shot does 1 damage.</tooltip>
+	<descriptionOverride>"The Scram Cannon is one of the fastest firing guns in the market. The technology is so simple that anyone could build one of these weapons from scratch, but it is still preferable to get an original design, handmade by droids."
+
+Stats:
+Required Power: 3
+Charge Time: 0.5 seconds
+
+Shots Per Charge: 1
+
+Base Hull Damage: 0.5
+Total System Damage: 0.5
+Total Crew Damage: 7.5
+
+Fire Change: 10%
+
+Default Price: 50~   -   Selling Price:25~
+	</descriptionOverride>
+	<damage>0</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>0.5</cooldown>
+	<power>3</power>
+	<cost>50</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>laser_drone</image>
+	<launchSounds>
+		<sound>gofcannonfire3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_cannon_3</weaponArt> 
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+</FTL>
+
+<FTL>
+<crewBlueprint name="human_terran">
+	<desc>A refugee from a far away universe where no one has ever even heard of the rebellion.
+	
+	Inherited Human stat: minor suffocation resistance</desc>
+	<cost>90</cost>
+	<title>Terran Operative</title>
+	<short>Operative</short>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Inflicts 1.6x damage in crew combat</power>
+		<power>Trained in lvl1 skills, gains 13% combat resistance and 10% movement speed for every enemy crew in the room</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="human_terran_pyro">
+	<desc>A refugee from a far away universe where no one has ever even heard of the rebellion.
+
+	Inherited Human stat: minor suffocation resistance</desc>
+	<cost>100</cost>
+	<title>Terran Pyrotechnic</title>
+	<short>Pyrotechnic</short>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Periodic Ability: Starts fires while in combat</power>
+		<power>Attacks extremely fast in ranged combat, but does 30% of normal melee damage</power>
+		<power>1.25x melee damage, 0.5x movement speed, 0.8x combat damage taken</power>
+		<power>immune to fires and extinguishes them twice as fast</power>
+	</powerList>
+</crewBlueprint>
+</FTL>  
+
+<FTL>
+	<shipBlueprint name="PLAYER_SHIP_GOF_ANAAN" layout="gofp_anaan_a" img="gofp_anaan_a">
+		<class>Anaan</class>
+		<name>The Maxwell</name>
+		<desc>From the Terran handbook: "This ship is often used to transport expensive goods or important politicians. It has a large cargo space and can handle itself when it comes to combat."</desc>
+		<systemList>
+			<cloaking power="1" room="10" start="false" img="room_cloaking_10" />
+			<clonebay power="1" room="5" start="false">
+				<slot>
+					<number>1</number>
+				</slot>
+			</clonebay>
+			<doors power="1" room="2" start="true" img="room_doors_9">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="14" start="false" img="room_drones_14" />
+			<engines power="2" room="12" start="true" img="room_engines_2">
+				<slot>
+					<direction>down</direction>
+					<number>2</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="13" start="false" img="room_hacking_2" />
+			<medbay power="1" room="5" start="true" img="room_medbay">
+				<slot>
+					<number>1</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="11" start="false" img="room_mind_5" />
+			<oxygen power="1" room="6" start="true" img="room_oxygen_6" />
+			<pilot power="1" room="0" start="true" img="room_pilot">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="1" start="true" img="room_sensors_3">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8" room="4" start="true" img="room_shields_5">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="7" start="false" />
+			<temporal power="1" room="15" start="true" img="room_mind_9" />
+			<weapons power="2" max="8" room="3" start="true" img="room_weapons">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>4</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="6" count="4">
+			<weapon name="LIST_WEAPONS_GOF_SMALL" />
+			<weapon name="LIST_WEAPONS_GOF_SMALL" />
+		</weaponList>
+		<droneList drones="5" count="2" />
+		<health amount="30" />
+		<maxPower amount="8" />
+		<crewCount amount="1" class="human" />
+		<crewCount amount="1" class="human_terran" />
+		<crewCount amount="1" class="human_terran" />
+	</shipBlueprint>
+
+	<shipBlueprint name="PLAYER_SHIP_GOF_ANAAN_2" layout="gofp_anaan_b" img="gofp_anaan_b">
+		<class>Anaan</class>
+		<name>The Mkkt Bkkt</name>
+		<desc>Once a dangerous Terran cruiser, now a weapon of pirates.</desc>
+		<systemList>
+			<cloaking power="1" room="1" start="false" img="room_cloaking" />
+			<clonebay power="1" room="4" start="false">
+				<slot>
+					<number>-1</number>
+				</slot>
+			</clonebay>
+			<doors power="1" room="10" start="true" img="room_doors_4">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="2" start="true" img="room_drones_5" />
+			<engines power="3" room="6" start="true" img="room_engines_2">
+				<slot>
+					<direction>down</direction>
+					<number>2</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="15" start="false" img="room_hacking_6" />
+			<medbay power="1" room="4" start="true" img="room_medbay_4">
+				<slot>
+					<number>0</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="12" start="false" img="room_mind_5" />
+			<oxygen power="1" room="9" start="true" img="room_oxygen_19" />
+			<pilot power="1" room="0" start="true" img="room_pilot">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="14" start="true" img="room_sensors_6">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8" room="5" start="false" img="room_shields_5">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="16" start="false" />
+			<weapons power="2" max="8" room="3" start="true" img="room_weapons_6">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>2</weaponSlots>
+		<droneSlots>4</droneSlots>
+		<weaponList missiles="6" count="2">
+			<weapon name="GOF_SCATTER_1" />
+		</weaponList>
+		<droneList drones="5" count="4">
+			<drone name="MANNING" />
+			<drone name="AMPHI_DEFENSE" />
+		</droneList>
+		<health amount="45" />
+		<maxPower amount="9" />
+		<crewCount amount="1" class="human" />
+		<crewCount amount="1" class="human_engineer" />
+	</shipBlueprint>
+
+	<shipBlueprint name="PLAYER_SHIP_GOF_ANAAN_3" layout="gofp_anaan_c" img="gofp_anaan_c">
+		<class>Anaan</class>
+		<name>The Gunant</name>
+		<desc>One of the elite terren vessels, how it even got out here, the crew still aren't even sure.</desc>
+		<systemList>
+			<battery power="1" room="10" start="false" img="room_battery_2" />
+			<cloaking power="1" room="5" start="false" img="room_cloaking_3" />
+			<clonebay power="1" room="11" start="false">
+				<slot>
+					<number>-2</number>
+				</slot>
+			</clonebay>
+			<doors power="2" room="3" start="false" img="room_doors_9">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</doors>
+			<drones power="1" max="8" room="9" start="false" img="room_drones_2" />
+			<engines power="2" room="6" start="true" img="room_engines_2">
+				<slot>
+					<direction>down</direction>
+					<number>2</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="13" start="false" img="room_hacking_11" />
+			<medbay power="1" room="11" start="true" img="room_medbay_8">
+				<slot>
+					<number>-2</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="14" start="false" img="room_mind_6" />
+			<oxygen power="1" room="4" start="true" img="room_oxygen_17" />
+			<pilot power="1" room="0" start="true" img="room_pilot">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</pilot>
+			<sensors power="2" room="2" start="true" img="room_sensors_3">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8" room="8" start="true" img="room_shields_7">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="1" start="true" />
+			<weapons power="2" max="8" room="7" start="false" img="room_weapons_4">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>4</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="6" count="4" />
+		<droneList drones="5" count="2" />
+		<health amount="30" />
+		<maxPower amount="7" />
+		<crewCount amount="1" class="human_terran" />
+		<crewCount amount="1" class="human_terran_pyro" />
+		<crewCount amount="1" class="human_terran" />
+	</shipBlueprint>
+</FTL>

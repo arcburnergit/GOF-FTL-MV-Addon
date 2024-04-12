@@ -1,0 +1,497 @@
+<FTL>
+<animSheet name="gof_laser_shot_chain_charge" w="17" h="49" fw="17" fh="49">weapon_laser/gof_shot_chain_chargeglow.png</animSheet>
+<anim name="gof_laser_shot_chain_charge">
+	<sheet>gof_laser_shot_chain_charge</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1.0</time>
+</anim>
+<animSheet name="gof_laser_shot_chain" w="204" h="49" fw="17" fh="49">weapon_laser/gof_shot_chain.png</animSheet>
+<weaponAnim name="gof_laser_shot_chain">
+	<sheet>gof_laser_shot_chain</sheet>
+	<desc length="12" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint x="9" y="7" />
+	<mountPoint x="2" y="36" />
+	<boost>gof_laser_shot_chain_charge</boost>
+</weaponAnim>
+
+<animSheet name="gof_laser_shot_chain_2_charge" w="36" h="55" fw="18" fh="55">weapon_laser/gof_shot_chain_2_chargeglow.png</animSheet>
+<anim name="gof_laser_shot_chain_2_charge">
+	<sheet>gof_laser_shot_chain_2_charge</sheet>
+	<desc length="2" x="0" y="0" />
+	<time>1.0</time>
+</anim>
+<animSheet name="gof_laser_shot_chain_2" w="216" h="55" fw="18" fh="55">weapon_laser/gof_shot_chain_2.png</animSheet>
+<weaponAnim name="gof_laser_shot_chain_2">
+	<sheet>gof_laser_shot_chain_2</sheet>
+	<desc length="12" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint x="10" y="7" />
+	<mountPoint x="2" y="41" />
+	<boost>gof_laser_shot_chain_2_charge</boost>
+</weaponAnim>
+
+<animSheet name="gof_laser_shot_chain_3_charge" w="54" h="57" fw="18" fh="57">weapon_laser/gof_shot_chain_3_chargeglow.png</animSheet>
+<anim name="gof_laser_shot_chain_3_charge">
+	<sheet>gof_laser_shot_chain_3_charge</sheet>
+	<desc length="3" x="0" y="0" />
+	<time>1.0</time>
+</anim>
+<animSheet name="gof_laser_shot_chain_3" w="216" h="57" fw="18" fh="57">weapon_laser/gof_shot_chain_3.png</animSheet>
+<weaponAnim name="gof_laser_shot_chain_3">
+	<sheet>gof_laser_shot_chain_3</sheet>
+	<desc length="12" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint x="10" y="4" />
+	<mountPoint x="2" y="47" />
+	<boost>gof_laser_shot_chain_3_charge</boost>
+</weaponAnim>
+
+<animSheet name="laser_pulse" w="60" h="20" fw="60" fh="20">projectiles/laser_pulse.png</animSheet>
+<anim name="laser_pulse">
+	<sheet>laser_pulse</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>0.3</time>
+</anim>
+
+<animSheet name="gof_thermo_1" w="207" h="36" fw="23" fh="36">weapon_thermo/gof_thermo_1.png</animSheet>
+<weaponAnim name="gof_thermo_1">
+	<sheet>gof_thermo_1</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint x="12" y="15" />
+	<mountPoint x="2" y="22" />
+</weaponAnim>
+
+<animSheet name="gof_thermo_2" w="207" h="45" fw="23" fh="45">weapon_thermo/gof_thermo_2.png</animSheet>
+<weaponAnim name="gof_thermo_2">
+	<sheet>gof_thermo_2</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint x="12" y="17" />
+	<mountPoint x="3" y="37" />
+</weaponAnim>
+
+<animSheet name="gof_thermo_3" w="207" h="45" fw="23" fh="45">weapon_thermo/gof_thermo_3.png</animSheet>
+<weaponAnim name="gof_thermo_3">
+	<sheet>gof_thermo_3</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint x="11" y="16" />
+	<mountPoint x="3" y="32" />
+</weaponAnim>
+
+<animSheet name="laser_thermo" w="200" h="20" fw="50" fh="20">weapon_thermo/laser_thermo.png</animSheet>
+<anim name="laser_thermo">
+	<sheet>laser_thermo</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="gof_scatter_1" w="207" h="66" fw="23" fh="66">weapon_laser/gof_scatter_1.png</animSheet>
+<weaponAnim name="gof_scatter_1">
+	<sheet>gof_scatter_1</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="14" y="9" />
+	<mountPoint x="4" y="49" />
+</weaponAnim>
+
+<animSheet name="gof_scatter_1_shot" w="24" h="24" fw="24" fh="24">projectiles/gof_scatter_1.png</animSheet>
+<anim name="gof_scatter_1_shot">
+	<sheet>gof_scatter_1_shot</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="gof_scatter_2" w="240" h="57" fw="24" fh="57">weapon_laser/gof_scatter_2.png</animSheet>
+<weaponAnim name="gof_scatter_2">
+	<sheet>gof_scatter_2</sheet>
+	<desc length="10" x="0" y="0" />
+	<chargedFrame>6</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="12" y="7" />
+	<mountPoint x="4" y="43" />
+</weaponAnim>
+
+<animSheet name="gof_scatter_2_shot" w="24" h="24" fw="24" fh="24">projectiles/gof_scatter_2.png</animSheet>
+<anim name="gof_scatter_2_shot">
+	<sheet>gof_scatter_2_shot</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="gof_scatter_3" w="147" h="61" fw="21" fh="61">weapon_laser/gof_scatter_3.png</animSheet>
+<weaponAnim name="gof_scatter_3">
+	<sheet>gof_scatter_3</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>2</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="11" y="7" />
+	<mountPoint x="3" y="49" />
+</weaponAnim>
+
+<animSheet name="gof_scatter_3_shot" w="24" h="24" fw="24" fh="24">projectiles/gof_scatter_3.png</animSheet>
+<anim name="gof_scatter_3_shot">
+	<sheet>gof_scatter_3_shot</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="gof_beam_1" w="125" h="67" fw="25" fh="67">weapon_beam/gof_beam_1.png</animSheet>
+<weaponAnim name="gof_beam_1">
+	<sheet>gof_beam_1</sheet>
+	<desc length="5" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="13" y="6" />
+	<mountPoint x="3" y="52" />
+	<chargeImage>weapon_beam/gof_beam_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="gof_beam_2" w="125" h="61" fw="25" fh="61">weapon_beam/gof_beam_2.png</animSheet>
+<weaponAnim name="gof_beam_2">
+	<sheet>gof_beam_2</sheet>
+	<desc length="5" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="12" y="7" />
+	<mountPoint x="3" y="50" />
+	<chargeImage>weapon_beam/gof_beam_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="gof_beam_3" w="261" h="58" fw="29" fh="58">weapon_beam/gof_beam_3.png</animSheet>
+<weaponAnim name="gof_beam_3">
+	<sheet>gof_beam_3</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="14" y="6" />
+	<mountPoint x="3" y="45" />
+</weaponAnim>
+
+<animSheet name="gof_heavy_0" w="207" h="36" fw="23" fh="36">weapon_laser/gof_heavy_0.png</animSheet>
+<weaponAnim name="gof_heavy_0">
+	<sheet>gof_heavy_0</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint x="13" y="3" />
+	<mountPoint x="2" y="26" />
+</weaponAnim>
+
+<animSheet name="gof_heavy_1" w="198" h="49" fw="22" fh="49">weapon_laser/gof_heavy_1.png</animSheet>
+<weaponAnim name="gof_heavy_1">
+	<sheet>gof_heavy_1</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint x="15" y="6" />
+	<mountPoint x="2" y="38" />
+</weaponAnim>
+
+<animSheet name="gof_heavy_2" w="171" h="47" fw="19" fh="47">weapon_laser/gof_heavy_2.png</animSheet>
+<weaponAnim name="gof_heavy_2">
+	<sheet>gof_heavy_2</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint x="13" y="5" />
+	<mountPoint x="2" y="36" />
+</weaponAnim>
+
+<animSheet name="gof_heavy_3" w="300" h="53" fw="25" fh="53">weapon_laser/gof_heavy_3.png</animSheet>
+<weaponAnim name="gof_heavy_3">
+	<sheet>gof_heavy_3</sheet>
+	<desc length="11" x="0" y="0" />
+	<chargedFrame>6</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint x="12" y="7" />
+	<mountPoint x="2" y="41" />
+</weaponAnim>
+
+<animSheet name="gof_cannon_1" w="110" h="55" fw="22" fh="55">weapon_cannon/gof_cannon_1.png</animSheet>
+<weaponAnim name="gof_cannon_1">
+	<sheet>gof_cannon_1</sheet>
+	<desc length="5" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="14" y="4" />
+	<mountPoint x="2" y="44" />
+</weaponAnim>
+
+<animSheet name="gof_cannon_2" w="110" h="55" fw="22" fh="55">weapon_cannon/gof_cannon_2.png</animSheet>
+<weaponAnim name="gof_cannon_2">
+	<sheet>gof_cannon_2</sheet>
+	<desc length="5" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="14" y="4" />
+	<mountPoint x="2" y="44" />
+</weaponAnim>
+
+<animSheet name="gof_cannon_3" w="138" h="62" fw="23" fh="62">weapon_cannon/gof_cannon_3.png</animSheet>
+<weaponAnim name="gof_cannon_3">
+	<sheet>gof_cannon_3</sheet>
+	<desc length="6" x="0" y="0" />
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="12" y="12" />
+	<mountPoint x="2" y="50" />
+</weaponAnim>
+</FTL>
+
+<FTL>
+<animSheet name="human_terran" w="385" h="455" fw="35" fh="35">people/human_terran_base.png</animSheet>
+<anim name="human_terran_clone">
+	<sheet>human_terran</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_death_right">
+	<sheet>human_terran</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_death_left">
+	<sheet>human_terran</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_walk_down">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_walk_right">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_walk_up">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_walk_left">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_shoot_down">
+	<sheet>human_terran</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_shoot_right">
+	<sheet>human_terran</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_shoot_up">
+	<sheet>human_terran</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_shoot_left">
+	<sheet>human_terran</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_fire_down">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_fire_right">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_fire_up">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_fire_left">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_repair">
+	<sheet>human_terran</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_punch_up">
+	<sheet>human_terran</sheet>
+	<desc length="8" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_punch_down">
+	<sheet>human_terran</sheet>
+	<desc length="8" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_teleport">
+	<sheet>human_terran</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="human_terran_type_right">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_type_left">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_type_up">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_type_down">
+	<sheet>human_terran</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_portrait">
+	<sheet>human_terran</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+
+<animSheet name="human_terran_pyro" w="420" h="455" fw="35" fh="35">people/human_terran_pyro_base.png</animSheet>
+<anim name="human_terran_pyro_clone">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="6" x="0" y="1" />
+	<time>0.75</time>
+</anim>
+<animSheet name="explosion_human_terran_pyro_death" w="640" h="64" fw="64" fh="64">effects/explosion_big1_strip10.png</animSheet>
+<anim name="human_terran_pyro_death_right">
+	<sheet>explosion_human_terran_pyro_death</sheet>
+	<desc length="10" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="human_terran_pyro_death_left">
+	<sheet>explosion_human_terran_pyro_death</sheet>
+	<desc length="10" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="human_terran_pyro_walk_down">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_walk_right">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_walk_up">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_walk_left">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_shoot_down">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>0.1</time>
+</anim>
+<anim name="human_terran_pyro_shoot_right">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="6" x="6" y="10" />
+	<time>0.1</time>
+</anim>
+<anim name="human_terran_pyro_shoot_up">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="6" x="0" y="9" />
+	<time>0.1</time>
+</anim>
+<anim name="human_terran_pyro_shoot_left">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="6" x="6" y="9" />
+	<time>0.1</time>
+</anim>
+<anim name="human_terran_pyro_fire_down">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_fire_right">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_fire_up">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_fire_left">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="4" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_repair">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="9" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_punch_up">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="6" x="6" y="5" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_punch_down">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="6" x="0" y="5" />
+	<time>1.0</time>
+</anim>
+<anim name="human_terran_pyro_teleport">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>0.5</time>
+</anim>
+<anim name="human_terran_pyro_type_right">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_pyro_type_left">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_pyro_type_up">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="0" y="3" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_pyro_type_down">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="4" x="4" y="3" />
+	<time>0.75</time>
+</anim>
+<anim name="human_terran_pyro_portrait">
+	<sheet>human_terran_pyro</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+</FTL>

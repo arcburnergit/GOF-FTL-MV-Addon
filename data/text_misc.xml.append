@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL>
+
+<text name="map_icon_gof_wt">DISTRESS</text>
+  
+<text name="addon_hover_gof2">FTL:Galaxy On Fire
+Currently Enabled.
+Click to see more info.</text>
+<text name="addon_hover_gof">FTL:Galaxy On Fire
+Currently Enabled.
+Click to see more info.</text>
+
+<text name="tip_gof_pulse">Pulse lasers gain more shots each time they fire however their charge time also increases.</text>
+<text name="tip_gof_thermo">Thermal Weapons take time to lock on, however the process resets if you change targetting at any point.</text>
+<text name="tip_gof_scatter">Scatter Weapons damage random adjacent rooms. This weapon will damage to 1 random adjacent room.</text>
+<text name="tip_gof_beam">Beam Lasers can't pierce shields but do damage shields proportional to half their damage.</text>
+<text name="tip_gof_heavy">Focus Lasers require manual calibration every time they fire, otherwise they risk damaging the ship they're being fired from, make sure to have your weapons manned at all time when using these dangerous weapons.</text>
+<text name="tip_gof_cannon">Auto-Cannons' damage is often less than 1, and so the damage is only dealt once the total damage dealt by these kinds of weapons overflows over 1 (or 15 in the case of crew damage).</text>
+</FTL>

@@ -1,0 +1,149 @@
+<FTL>
+    <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
+        <mod-append:name>GOF_CHAIN_SHOT</mod-append:name>
+        <mod-append:name>GOF_CHAIN_SHOT_2</mod-append:name>
+        <mod-append:name>GOF_CHAIN_SHOT_3</mod-append:name>
+
+        <mod-append:name>GOF_THERMO_1</mod-append:name>
+        <mod-append:name>GOF_THERMO_2</mod-append:name>
+        <mod-append:name>GOF_THERMO_3</mod-append:name>
+
+        <mod-append:name>GOF_SCATTER_1</mod-append:name>
+        <mod-append:name>GOF_SCATTER_2</mod-append:name>
+        <mod-append:name>GOF_SCATTER_3</mod-append:name>
+
+        <mod-append:name>GOF_BEAM_1</mod-append:name>
+        <mod-append:name>GOF_BEAM_2</mod-append:name>
+        <mod-append:name>GOF_BEAM_3</mod-append:name>
+        
+        <mod-append:name>GOF_HEAVY_0</mod-append:name>
+        <mod-append:name>GOF_HEAVY_1</mod-append:name>
+        <mod-append:name>GOF_HEAVY_2</mod-append:name>
+        <mod-append:name>GOF_HEAVY_3</mod-append:name>
+
+        <mod-append:name>GOF_CANNON_1</mod-append:name>
+        <mod-append:name>GOF_CANNON_2</mod-append:name>
+        <mod-append:name>GOF_CANNON_3</mod-append:name>
+    </mod:findName>
+
+    <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
+        <mod-append:name>GOF_CHAIN_SHOT</mod-append:name>
+        <mod-append:name>GOF_CHAIN_SHOT_2</mod-append:name>
+        <mod-append:name>GOF_CHAIN_SHOT_3</mod-append:name>
+
+        <mod-append:name>GOF_THERMO_1</mod-append:name>
+        <mod-append:name>GOF_THERMO_2</mod-append:name>
+        <mod-append:name>GOF_THERMO_3</mod-append:name>
+
+        <mod-append:name>GOF_SCATTER_1</mod-append:name>
+        <mod-append:name>GOF_SCATTER_2</mod-append:name>
+        <mod-append:name>GOF_SCATTER_3</mod-append:name>
+
+        <mod-append:name>GOF_BEAM_1</mod-append:name>
+        <mod-append:name>GOF_BEAM_2</mod-append:name>
+        <mod-append:name>GOF_BEAM_3</mod-append:name>
+
+        <mod-append:name>GOF_HEAVY_0</mod-append:name>
+        <mod-append:name>GOF_HEAVY_1</mod-append:name>
+        <mod-append:name>GOF_HEAVY_2</mod-append:name>
+        <mod-append:name>GOF_HEAVY_3</mod-append:name>
+
+        <mod-append:name>GOF_CANNON_1</mod-append:name>
+        <mod-append:name>GOF_CANNON_2</mod-append:name>
+        <mod-append:name>GOF_CANNON_3</mod-append:name>
+    </mod:findName>
+
+    <mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
+        <mod-append:name>human_terran</mod-append:name>
+        <mod-append:name>human_terran_pyro</mod-append:name>
+    </mod:findName>
+
+    <blueprintList name="LIST_WEAPONS_GOF">
+        <name>GOF_CHAIN_SHOT</name>
+        <name>GOF_CHAIN_SHOT_2</name>
+        <name>GOF_CHAIN_SHOT_3</name>
+
+        <name>GOF_THERMO_1</name>
+        <name>GOF_THERMO_2</name>
+        <name>GOF_THERMO_3</name>
+
+        <name>GOF_SCATTER_1</name>
+        <name>GOF_SCATTER_2</name>
+        <name>GOF_SCATTER_3</name>
+
+        <name>GOF_BEAM_1</name>
+        <name>GOF_BEAM_2</name>
+        <name>GOF_BEAM_3</name>
+        
+        <name>GOF_HEAVY_0</name>
+        <name>GOF_HEAVY_1</name>
+        <name>GOF_HEAVY_2</name>
+        <name>GOF_HEAVY_3</name>
+
+        <name>GOF_CANNON_1</name>
+        <name>GOF_CANNON_2</name>
+        <name>GOF_CANNON_3</name>
+    </blueprintList>
+
+    <blueprintList name="LIST_WEAPONS_GOF_SMALL">
+        <name>GOF_CHAIN_SHOT</name>
+
+        <name>GOF_THERMO_1</name>
+
+        <name>GOF_BEAM_1</name>
+        
+        <name>GOF_HEAVY_0</name>
+        <name>GOF_HEAVY_1</name>
+        
+        <name>GOF_CANNON_1</name>
+    </blueprintList>
+
+    <blueprintList name="LIST_WEAPONS_GOF_MEDIUM">
+        <name>GOF_CHAIN_SHOT</name>
+        <name>GOF_CHAIN_SHOT_2</name>
+
+        <name>GOF_THERMO_1</name>
+        <name>GOF_THERMO_2</name>
+
+        <name>GOF_SCATTER_1</name>
+
+        <name>GOF_BEAM_1</name>
+        <name>GOF_BEAM_2</name>
+        
+        <name>GOF_HEAVY_0</name>
+        <name>GOF_HEAVY_1</name>
+        <name>GOF_HEAVY_2</name>
+        
+        <name>GOF_CANNON_1</name>
+        <name>GOF_CANNON_2</name>
+    </blueprintList>
+
+    <shipBlueprint name="GOF_ANAAN" layout="gof_anaan" img="gof_anaan">
+        <class>Anaan</class>
+        <minSector>1</minSector>
+        <maxSector>8</maxSector>
+        <systemList>
+            <battery power="1" max="1" room="11" start="false" />
+            <cloaking power="1" max="1" room="6" start="false" />
+            <doors power="1" max="2" room="13" start="true" />
+            <drones power="1" max="8" room="4" start="false" />
+            <engines power="1" max="2" room="8" start="true" />
+            <hacking power="1" max="2" room="12" start="false" />
+            <medbay power="1" max="1" room="7" start="true" />
+            <oxygen power="1" max="1" room="10" start="true" />
+            <pilot power="1" max="2" room="0" start="true" />
+            <shields power="2" max="10" room="2" start="true" />
+            <teleporter power="1" max="2" room="9" start="false" />
+            <temporal power="1" max="1" room="1" start="false" />
+            <weapons power="2" max="10" room="3" start="true" />
+        </systemList>
+        <weaponSlots>4</weaponSlots>
+        <droneSlots>2</droneSlots>
+        <weaponList missiles="7" count="4" load="LIST_WEAPONS_GOF" />
+        <droneList drones="9" count="2" load="DRONES_STANDARD" />
+        <health amount="15" />
+        <maxPower amount="7" />
+        <boardingAI>sabotage</boardingAI>
+        <aug name="AUTO_COOLDOWN" />
+    </shipBlueprint>
+</FTL>
