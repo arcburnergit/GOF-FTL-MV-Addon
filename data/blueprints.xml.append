@@ -1023,6 +1023,120 @@ Default Price: 50~   -   Selling Price:25~
 	<weaponArt>gof_cannon_3</weaponArt> 
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
+
+<weaponBlueprint name="GOF_ROCKET_1"> 
+	<type>MISSILES</type>
+	<flavorType>Rocket Pod</flavorType>
+	<title>Edo Rocket Pod</title>
+	<short>Edo Pod</short>
+	<tip>tip_gof_rocket</tip>
+	<desc>"Missiles follow their trajectory until they hit a target or run out of fuel. The Edo guided missile is similar to the unguided Jet Rocket, though somewhat slower."</desc>
+	<tooltip>Fires 1 missile every 2 seconds, every missile does 23 damage but no shield breaching. Only has 5 missiles total.</tooltip>
+	<damage>3</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>5</cooldown>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>rocket_gof_1</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_rocket_1</weaponArt> 
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_ROCKET_2"> 
+	<type>MISSILES</type>
+	<flavorType>Rocket Pod</flavorType>
+	<title>Jet Rocket Pod</title>
+	<short>Jet Pod</short>
+	<tip>tip_gof_rocket</tip>
+	<desc>"Missiles, which have no guidance system, are better used at close range. The jet version is cheap and powerful and always worth having on-board for emergencies."</desc>
+	<tooltip>Fires 1 missile every 2 seconds, every missile does 23 damage but no shield breaching. Only has 10 missiles total.</tooltip>
+	<damage>3</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>4</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>rocket_gof_2</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_rocket_2</weaponArt> 
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GOF_ROCKET_3"> 
+	<type>MISSILES</type>
+	<flavorType>Rocket Pod</flavorType>
+	<title>Armour Rocket Pod</title>
+	<short>Armour Pod</short>
+	<tip>tip_gof_rocket</tip>
+	<desc>"Behind the charming name lies a deadly missile, which wreaks destructive havoc while simultaneously attacking the electronics of its target. This characteristic makes it an unpredictable but interesting part of any arsenal."</desc>
+	<tooltip>Fires 1 missile every 2 seconds, every missile does 23 damage but no shield breaching. Only has 15 missiles total.</tooltip>
+	<damage>3</damage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>3</cooldown>
+	<power>3</power>
+	<cost>70</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>rocket_gof_3</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gof_rocket_3</weaponArt> 
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
 </FTL>
 
 <FTL>

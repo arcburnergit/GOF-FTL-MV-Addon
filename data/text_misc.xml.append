@@ -17,4 +17,5 @@ Click to see more info.</text>
 <text name="tip_gof_beam">Beam Lasers can't pierce shields but do damage shields proportional to half their damage.</text>
 <text name="tip_gof_heavy">Focus Lasers require manual calibration every time they fire, otherwise they risk damaging the ship they're being fired from, make sure to have your weapons manned at all time when using these dangerous weapons.</text>
 <text name="tip_gof_cannon">Auto-Cannons' damage is often less than 1, and so the damage is only dealt once the total damage dealt by these kinds of weapons overflows over 1 (or 15 in the case of crew damage).</text>
+<text name="tip_gof_rocket">Rockets fire extremely fast but have no shield piercing and a limited number of shots, they can only be reloaded when jumping.</text>
 </FTL>

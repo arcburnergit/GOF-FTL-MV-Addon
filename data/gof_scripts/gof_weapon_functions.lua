@@ -468,14 +468,14 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipM
     local cannonDamage = autoCannon[weaponName]
     if cannonDamage and shipManager.iShipId == 1 then
     	Hyperspace.playerVariables.gofEnemyShield = Hyperspace.playerVariables.gofEnemyShield + cannonDamage
-    	print(Hyperspace.playerVariables.gofEnemyShield)
+    	--print(Hyperspace.playerVariables.gofEnemyShield)
     	if Hyperspace.playerVariables.gofEnemyShield >= 100 then
     		Hyperspace.playerVariables.gofEnemyShield = Hyperspace.playerVariables.gofEnemyShield - (100)
     		damage_shields(shipManager, projectile)
 		end
 	elseif cannonDamage and shipManager.iShipId == 0 then
 		Hyperspace.playerVariables.gofPlayerShield = Hyperspace.playerVariables.gofPlayerShield + cannonDamage
-		print(Hyperspace.playerVariables.gofPlayerShield)
+		--print(Hyperspace.playerVariables.gofPlayerShield)
     	if Hyperspace.playerVariables.gofPlayerShield >= 100 then
     		Hyperspace.playerVariables.gofPlayerShield = Hyperspace.playerVariables.gofPlayerShield - (100)
     		damage_shields(shipManager, projectile)
@@ -496,7 +496,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
     local cannonDamage = autoCannon[weaponName]
     if cannonDamage and shipManager.iShipId == 1 then
     	Hyperspace.playerVariables.gofEnemyHull = Hyperspace.playerVariables.gofEnemyHull + cannonDamage
-    	print(Hyperspace.playerVariables.gofEnemyHull)
+    	--print(Hyperspace.playerVariables.gofEnemyHull)
     	if Hyperspace.playerVariables.gofEnemyHull >= 100 then
     		Hyperspace.playerVariables.gofEnemyHull = Hyperspace.playerVariables.gofEnemyHull - (100+cannonDamage)
     		damage_hull(shipManager, projectile)
@@ -505,7 +505,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipMa
 
 	elseif cannonDamage and shipManager.iShipId == 0 then
 		Hyperspace.playerVariables.gofPlayerHull = Hyperspace.playerVariables.gofPlayerHull + cannonDamage
-		print(Hyperspace.playerVariables.gofPlayerHull)
+		--print(Hyperspace.playerVariables.gofPlayerHull)
     	if Hyperspace.playerVariables.gofPlayerHull >= 100 then
     		Hyperspace.playerVariables.gofPlayerHull = Hyperspace.playerVariables.gofPlayerHull - (100+cannonDamage)
     		damage_hull(shipManager, projectile)
@@ -519,3 +519,44 @@ script.on_internal_event(Defines.InternalEvents.JUMP_ARRIVE, function(shipManage
 	Hyperspace.playerVariables.gofPlayerShield = 0
 	Hyperspace.playerVariables.gofPlayerHull = 0
 end)
+
+--[[
+mods.gof.rocketPods = {}
+local rocketPods = mods.gof.rocketPods
+rocketPods["GOF_ROCKET_1"] = 5
+rocketPods["GOF_ROCKET_2"] = 10
+rocketPods["GOF_ROCKET_3"] = 15
+
+script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projectile, weapon)
+	local weaponName = nil
+    pcall(function() weaponName = Hyperspace.Get_Projectile_Extend(projectile).name end)
+    local rocketData = rocketPods[weaponName]
+    if rocketData then
+    	print(weaponName)
+    	local rocketTable = userdata_table(weapon, "mods.gof.rocketPods")
+    	if rocketTable.rockets then
+    		rocketTable.rockets = rocketTable.rockets - 1
+    		print("AMMO")
+    		print(rocketTable.rockets)
+    		if rocketTable.rockets <= 0 then 
+    			weapon:SetCooldownModifier(-1)
+    		end
+    		--weapon.boostLevel = rocketTable.rockets
+    	else
+    		print("START AMMO")
+    		rocketTable.rockets = rocketData - 1
+    		--weapon.boostLevel = rocketTable.rockets
+    	end
+    end
+end)
+
+script.on_internal_event(Defines.InternalEvents.JUMP_ARRIVE, function(shipManager)
+	for weapon in vter(shipManager:GetWeaponList()) do
+		local rocketData = rocketPods[weapon.blueprint.name]
+		if rocketData then
+			weapon:SetCooldownModifier(1)
+			userdata_table(weapon, "mods.gof.rocketPods").rockets = rocketData
+			--weapon.boostLevel = rocketData
+		end
+	end
+end)]]

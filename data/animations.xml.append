@@ -246,6 +246,60 @@
 	<firePoint x="12" y="12" />
 	<mountPoint x="2" y="50" />
 </weaponAnim>
+
+<animSheet name="gof_rocket_1" w="81" h="40" fw="27" fh="40">weapon_missile/gof_rocket_1.png</animSheet>
+<weaponAnim name="gof_rocket_1">
+	<sheet>gof_rocket_1</sheet>
+	<desc length="2" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="15" y="4" />
+	<mountPoint x="3" y="25" />
+	<chargeImage>weapon_missile/gof_rocket_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="rocket_gof_1" w="32" h="80" fw="32" fh="80">weapon_missile/rocket_gof_1.png</animSheet>
+<anim name="rocket_gof_1">
+	<sheet>rocket_gof_1</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="gof_rocket_2" w="81" h="40" fw="27" fh="40">weapon_missile/gof_rocket_2.png</animSheet>
+<weaponAnim name="gof_rocket_2">
+	<sheet>gof_rocket_2</sheet>
+	<desc length="2" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="15" y="4" />
+	<mountPoint x="3" y="25" />
+	<chargeImage>weapon_missile/gof_rocket_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="rocket_gof_2" w="31" h="80" fw="31" fh="80">weapon_missile/rocket_gof_2.png</animSheet>
+<anim name="rocket_gof_2">
+	<sheet>rocket_gof_2</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="gof_rocket_3" w="81" h="40" fw="27" fh="40">weapon_missile/gof_rocket_3.png</animSheet>
+<weaponAnim name="gof_rocket_3">
+	<sheet>gof_rocket_3</sheet>
+	<desc length="2" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="15" y="4" />
+	<mountPoint x="3" y="25" />
+	<chargeImage>weapon_missile/gof_rocket_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="rocket_gof_3" w="31" h="80" fw="31" fh="80">weapon_missile/rocket_gof_3.png</animSheet>
+<anim name="rocket_gof_3">
+	<sheet>rocket_gof_3</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
 </FTL>
 
 <FTL>

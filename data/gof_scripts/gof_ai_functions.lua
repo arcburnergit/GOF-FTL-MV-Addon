@@ -175,7 +175,9 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
                 end
             end
 
-            if onlyIon and hasIon then
+            local random = math.random()
+
+            if onlyIon and hasIon and random > 0.5 then
                 shipManager.shieldSystem:SetPowerCap(0)
                 shieldTable.shieldTime = 0.5
                 --print("DEPOWER SHIELD")
