@@ -14,7 +14,7 @@ We would appreciate it if you could spare us any supplies for repairs."</text>
             <event>
                 <text>You dock with the ship and transfer the supplies.</text>
                 <item_modify>
-                    <item type="fuel" min="-3" max="-5" />
+                    <item type="fuel" min="-5" max="-3" />
                 </item_modify>
                 <weapon name="LIST_WEAPONS_GOF_SMALL" />
                 <choice>
@@ -32,7 +32,7 @@ We would appreciate it if you could spare us any supplies for repairs."</text>
             <event>
                 <text>You dock with the ship and transfer the supplies.</text>
                 <item_modify>
-                    <item type="missiles" min="-3" max="-5" />
+                    <item type="missiles" min="-5" max="-4" />
                 </item_modify>
                 <weapon name="LIST_WEAPONS_GOF_SMALL" />
                 <choice>
@@ -50,7 +50,7 @@ We would appreciate it if you could spare us any supplies for repairs."</text>
             <event>
                 <text>You dock with the ship and transfer the supplies.</text>
                 <item_modify>
-                    <item type="drones" min="-3" max="-5" />
+                    <item type="drones" min="-5" max="-3" />
                 </item_modify>
                 <weapon name="LIST_WEAPONS_GOF_SMALL" />
                 <choice>

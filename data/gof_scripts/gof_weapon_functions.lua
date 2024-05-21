@@ -139,9 +139,9 @@ int iStun;]]--
 
 mods.gof.chainShots = {}
 local chainShots = mods.gof.chainShots
-chainShots["GOF_CHAIN_SHOT"] = {1,"gofpulsefire1"}
+--[[chainShots["GOF_CHAIN_SHOT"] = {1,"gofpulsefire1"}
 chainShots["GOF_CHAIN_SHOT_2"] = {2,"gofpulsefire2"}
-chainShots["GOF_CHAIN_SHOT_3"] = {3,"gofpulsefire3"}
+chainShots["GOF_CHAIN_SHOT_3"] = {3,"gofpulsefire3"}]]
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projectile, weapon)
 	--print(weapon.boostLevel)
@@ -174,7 +174,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
 				if not soundName then
 					soundName = "gofpulsefire1"
 				end
-        		Hyperspace.Sounds:PlaySoundMix(soundName, -1, true)
+        		Hyperspace.Sounds:PlaySoundMix(soundName, -1, false)
 
 				local spaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
 				local laser = spaceManager:CreateLaserBlast(
@@ -267,7 +267,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
 				projTable.delay = nil
 				projectile.speed_magnitude = 50
 				local soundName = thermoSounds:GetItem()
-        		Hyperspace.Sounds:PlaySoundMix(soundName, -1, true)
+        		Hyperspace.Sounds:PlaySoundMix(soundName, -1, false)
         	end
         end
     end
@@ -309,9 +309,9 @@ end)
 
 mods.gof.scatterWeapons = {}
 local scatterWeapons = mods.gof.scatterWeapons
-scatterWeapons["GOF_SCATTER_1"] = Hyperspace.Blueprints:GetWeaponBlueprint("GOF_SCATTER_1_PROJECTILE")
+--[[scatterWeapons["GOF_SCATTER_1"] = Hyperspace.Blueprints:GetWeaponBlueprint("GOF_SCATTER_1_PROJECTILE")
 scatterWeapons["GOF_SCATTER_2"] = Hyperspace.Blueprints:GetWeaponBlueprint("GOF_SCATTER_2_PROJECTILE")
-scatterWeapons["GOF_SCATTER_3"] = Hyperspace.Blueprints:GetWeaponBlueprint("GOF_SCATTER_3_PROJECTILE")
+scatterWeapons["GOF_SCATTER_3"] = Hyperspace.Blueprints:GetWeaponBlueprint("GOF_SCATTER_3_PROJECTILE")]]
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location, damage, shipFriendlyFire)
     local weaponName = nil
@@ -368,7 +368,7 @@ end)
 
 mods.gof.manningWeapons = {}
 local manningWeapons = mods.gof.manningWeapons
-manningWeapons["GOF_HEAVY_0"] = Hyperspace.Damage()
+--[[manningWeapons["GOF_HEAVY_0"] = Hyperspace.Damage()
 manningWeapons["GOF_HEAVY_0"].iDamage = 1
 manningWeapons["GOF_HEAVY_0"].fireChance = 10
 manningWeapons["GOF_HEAVY_1"] = Hyperspace.Damage()
@@ -382,7 +382,7 @@ manningWeapons["GOF_HEAVY_2"].fireChance = 10
 manningWeapons["GOF_HEAVY_3"] = Hyperspace.Damage()
 manningWeapons["GOF_HEAVY_3"].iDamage = 1
 manningWeapons["GOF_HEAVY_3"].iSystemDamage = 1
-manningWeapons["GOF_HEAVY_3"].fireChance = 10
+manningWeapons["GOF_HEAVY_3"].fireChance = 10]]
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projectile, weapon)
 	local weaponName = nil
@@ -400,9 +400,9 @@ end)
 
 mods.gof.beamLasers = {}
 local beamLasers = mods.gof.beamLasers
-beamLasers["GOF_BEAM_1"] = true
+--[[beamLasers["GOF_BEAM_1"] = true
 beamLasers["GOF_BEAM_2"] = true
-beamLasers["GOF_BEAM_3"] = true
+beamLasers["GOF_BEAM_3"] = true]]
 
 script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipManager, projectile, damage, response)
 	if shipManager:HasSystem(0) then
@@ -445,9 +445,9 @@ end)]]
 
 mods.gof.autoCannon = {}
 local autoCannon = mods.gof.autoCannon
-autoCannon["GOF_CANNON_1"] = 20
+--[[autoCannon["GOF_CANNON_1"] = 20
 autoCannon["GOF_CANNON_2"] = 34
-autoCannon["GOF_CANNON_3"] = 50
+autoCannon["GOF_CANNON_3"] = 50]]
 
 local function damage_shields(shipManager, projectile)
 	local shieldPower = shipManager.shieldSystem.shields.power
@@ -520,32 +520,33 @@ script.on_internal_event(Defines.InternalEvents.JUMP_ARRIVE, function(shipManage
 	Hyperspace.playerVariables.gofPlayerHull = 0
 end)
 
---[[
+
 mods.gof.rocketPods = {}
 local rocketPods = mods.gof.rocketPods
-rocketPods["GOF_ROCKET_1"] = 5
+--[[rocketPods["GOF_ROCKET_1"] = 5
 rocketPods["GOF_ROCKET_2"] = 10
-rocketPods["GOF_ROCKET_3"] = 15
+rocketPods["GOF_ROCKET_3"] = 15]]
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projectile, weapon)
 	local weaponName = nil
     pcall(function() weaponName = Hyperspace.Get_Projectile_Extend(projectile).name end)
     local rocketData = rocketPods[weaponName]
     if rocketData then
-    	print(weaponName)
+    	--print(weaponName)
     	local rocketTable = userdata_table(weapon, "mods.gof.rocketPods")
     	if rocketTable.rockets then
     		rocketTable.rockets = rocketTable.rockets - 1
-    		print("AMMO")
-    		print(rocketTable.rockets)
+    		--print("AMMO")
+    		--print(rocketTable.rockets)
     		if rocketTable.rockets <= 0 then 
+    			--print("NO AMMO")
     			weapon:SetCooldownModifier(-1)
     		end
-    		--weapon.boostLevel = rocketTable.rockets
+    		weapon.boostLevel = rocketTable.rockets
     	else
-    		print("START AMMO")
+    		--print("START AMMO")
     		rocketTable.rockets = rocketData - 1
-    		--weapon.boostLevel = rocketTable.rockets
+    		weapon.boostLevel = rocketTable.rockets
     	end
     end
 end)
@@ -556,7 +557,22 @@ script.on_internal_event(Defines.InternalEvents.JUMP_ARRIVE, function(shipManage
 		if rocketData then
 			weapon:SetCooldownModifier(1)
 			userdata_table(weapon, "mods.gof.rocketPods").rockets = rocketData
-			--weapon.boostLevel = rocketData
+			weapon.boostLevel = rocketData
 		end
 	end
-end)]]
+end)
+
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
+	for weapon in vter(shipManager:GetWeaponList()) do
+		local rocketData = rocketPods[weapon.blueprint.name]
+		if rocketData then
+			local rocketTable = userdata_table(weapon, "mods.gof.rocketPods")
+			if rocketTable.rockets then
+				weapon.boostLevel = rocketTable.rockets
+				if rocketTable.rockets <= 0 then
+					weapon.cooldown.first = 0
+				end
+			end
+		end
+	end
+end)

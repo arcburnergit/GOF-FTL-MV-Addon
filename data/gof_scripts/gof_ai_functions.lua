@@ -135,6 +135,7 @@ bool bLockdown;
 bool crystalShard;
 bool bFriendlyFire;
 int iStun;]]--
+
 local cloakMaxTimer = 0
 local activeProjectileIds = {}
 script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
@@ -200,62 +201,138 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
             end
         end
         if shipManager:HasSystem(10) then
-            local cloakSystem = shipManager.cloakSystem
-            local cloakTimer = cloakSystem.timer
-            local cloakOverride = false
-            if cloakSystem.bTurnedOn then
-                --print("cloaking")
-                cloakMaxTimer = 0
-            end
-            cloakMaxTimer = math.min(cloakMaxTimer + Hyperspace.FPS.SpeedFactor/16, 20)
-            if cloakMaxTimer == 20 then
-                cloakMaxTimer = 0
-                cloakOverride = true
-            end
+            if not shipManager.cloakSystem.timer:Running() then
+                local cloakSystem = shipManager.cloakSystem
+                local cloakTimer = cloakSystem.timer
+                local cloakOverride = false
+                if cloakSystem.bTurnedOn then
+                    --print("cloaking")
+                    cloakMaxTimer = 0
+                end
+                cloakMaxTimer = math.min(cloakMaxTimer + Hyperspace.FPS.SpeedFactor/16, 20)
+                if cloakMaxTimer == 20 then
+                    cloakMaxTimer = 0
+                    cloakOverride = true
+                end
 
-            local laserCount = 0
-            local ionDamage = 0
-            local ionClose = false
-            local missileDamage = 0
-            local missileClose = false
-            for projectile in vter(projectileList) do 
-                if projectile.damage.iDamage >= 1 and projectile.damage.iDamage + projectile.damage.iSystemDamage >= 1 and projectile.damage.iShieldPiercing <= 4 and projectile.damage.iIonDamage <= 0 then
-                    laserCount = 1 + projectile.damage.iShieldPiercing
-                elseif projectile.damage.iIonDamage > 0 then
-                    ionDamage = ionDamage + projectile.damage.iIonDamage
-                    if (projectile.currentSpace == 0 and projectile.position.x > 700) or projectile.currentSpace == 1 then
-                        ionClose = true
-                    end
-                elseif projectile.damage.iShieldPiercing > 4 then
-                    missileDamage = missileDamage + projectile.damage.iDamage
-                    if (projectile.currentSpace == 0 and projectile.position.x > 700) or projectile.currentSpace == 1 then
-                        missileClose = true
+                local laserCount = 0
+                local ionDamage = 0
+                local ionClose = false
+                local missileDamage = 0
+                local missileClose = false
+                for projectile in vter(projectileList) do 
+                    if projectile.damage.iDamage >= 1 and projectile.damage.iDamage + projectile.damage.iSystemDamage >= 1 and projectile.damage.iShieldPiercing <= 4 and projectile.damage.iIonDamage <= 0 then
+                        laserCount = 1 + projectile.damage.iShieldPiercing
+                    elseif projectile.damage.iIonDamage > 0 then
+                        ionDamage = ionDamage + projectile.damage.iIonDamage
+                        if (projectile.currentSpace == 0 and projectile.position.x > 700) or projectile.currentSpace == 1 then
+                            ionClose = true
+                        end
+                    elseif projectile.damage.iShieldPiercing > 4 then
+                        missileDamage = missileDamage + projectile.damage.iDamage
+                        if (projectile.currentSpace == 0 and projectile.position.x > 700) or projectile.currentSpace == 1 then
+                            missileClose = true
+                        end
                     end
                 end
-            end
 
-            local shieldHealth = 0
-            if shipManager:HasSystem(0) then 
-                shieldHealth = shipManager.shieldSystem.shields.power.first
-            end
+                local shieldHealth = 0
+                if shipManager:HasSystem(0) then 
+                    shieldHealth = shipManager.shieldSystem.shields.power.first
+                end
 
-            if laserCount > shieldHealth + 1 or (laserCount + ionDamage > shieldHealth + 1 and ionClose)  then
-                cloakMaxTimer = 0
-                cloakOverride = true
-            elseif missileDamage > (math.max(shieldHealth-1,2)) and missileClose then
-                cloakMaxTimer = 0
-                cloakOverride = true
-            elseif ionDamage > shieldHealth and ionClose and (laserCount > 0 or missileDamage > 0) then
-                cloakMaxTimer = 0
-                cloakOverride = true
-            end
+                if laserCount > shieldHealth + 1 or (laserCount + ionDamage > shieldHealth + 1 and ionClose)  then
+                    cloakMaxTimer = 0
+                    cloakOverride = true
+                elseif missileDamage > (math.max(shieldHealth-1,2)) and missileClose then
+                    cloakMaxTimer = 0
+                    cloakOverride = true
+                elseif ionDamage > shieldHealth and ionClose and (laserCount > 0 or missileDamage > 0) then
+                    cloakMaxTimer = 0
+                    cloakOverride = true
+                end
 
-            if cloakOverride then
-                cloakMaxTimer = 0
-                shipManager.cloakSystem:SetPowerCap(100)
-            else
-                shipManager.cloakSystem:SetPowerCap(0)
+                if cloakOverride then
+                    cloakMaxTimer = 0
+                    shipManager.cloakSystem:SetPowerCap(100)
+                else
+                    shipManager.cloakSystem:SetPowerCap(0)
+                end
             end
+        end
+    end
+end)
+
+script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(projectile, weaponBlueprint)
+    if projectile.ownerId == 1 then
+        local shipManager = Hyperspace.ships.enemy
+        local otherShip = Hyperspace.ships.player
+        local targetRoom = nil
+
+        local shieldHp = otherShip
+        for proj in vter(projectileList) do
+            if proj.ownerId == 1 and proj.destinationSpace == 0 then
+                local roomTarget = get_room_at_location(otherShip, proj.target, true)
+
+            end
+            local roomTarget = get_room_at_location(shipManager, projectile.target, true)
+            if roomTarget and projectile.currentSpace == 0 and roomTarget ~= weaponRoom and projectile.position.x > 750 and projectile.destinationSpace == 1 and projectile.ownerId == 0 then
+                if projectile.damage.iIonDamage > 0 and projectile.damage.iDamage <= 0 and projectile.damage.iSystemDamage <= 0 then
+                    
+
+                    stillActiveProj[projectile.selfId] = true
+                    if not activeProjectileIds[projectile.selfId] then
+                        --print(roomTarget)
+                        --[[if roomTarget == weaponRoom then
+                            print("WEAPONROOM TARGETTED")
+                        end]]
+                        hasIon = true
+                        activeProjectileIds[projectile.selfId] = true
+                    end
+                elseif projectile.damage.iDamage > 0 or projectile.damage.iSystemDamage > 0 and (projectile.currentSpace == 1 or (projectile.currentSpace == 0 and projectile.position.x > 600)) then
+                    onlyIon = false
+                end
+            end
+        end
+
+        if targetRoom then
+            projectile.target = otherShip:GetRoomCenter(targetRoom)
+        end
+    end
+end)
+script.on_internal_event(Defines.InternalEvents.PROJECTILE_INITIALIZE, function(projectile, weaponBlueprint)
+    if weaponBlueprint.name == "RAD_LASER_SMART" then
+        local ship = Hyperspace.Global.GetInstance():GetShipManager(projectile.ownerId)
+        local otherShip = Hyperspace.Global.GetInstance():GetShipManager((projectile.ownerId + 1)%2)
+        local targetRoom = nil
+
+        if not otherShip:GetSystem(0):CompletelyDestroyed() then
+            targetRoom = otherShip:GetSystemRoom(0)
+            --log("Target Shields")
+        elseif not otherShip:GetSystem(3):CompletelyDestroyed() then
+            targetRoom = otherShip:GetSystemRoom(3)
+            --log("Target Weapons")
+        elseif not otherShip:GetSystem(4):CompletelyDestroyed() then
+            targetRoom = otherShip:GetSystemRoom(4)
+            --log("Target Drones")
+        elseif not otherShip:GetSystem(10):CompletelyDestroyed() then
+            targetRoom = otherShip:GetSystemRoom(10)
+            --log("Target Cloaking")
+        elseif not otherShip:GetSystem(1):CompletelyDestroyed() then
+            targetRoom = otherShip:GetSystemRoom(1)
+            --log("Target Engines")
+        end
+        
+        -- Retarget the bomb to that room
+        if targetRoom then
+            --log(tostring(targetRoom))
+            projectile.target = otherShip:GetRoomCenter(targetRoom)
+            userdata_table(projectile, "mods.radsmartlaser.comhead").notComputed = true
+            --projectile:ComputeHeading()
+            --projectile.heading = 0
+            --log("projectile space=======================================================================")
+            --log(tostring(projectile.currentSpace))
+            --log(tostring(projectile.destinationSpace))
         end
     end
 end)

@@ -250,7 +250,7 @@
 <animSheet name="gof_rocket_1" w="81" h="40" fw="27" fh="40">weapon_missile/gof_rocket_1.png</animSheet>
 <weaponAnim name="gof_rocket_1">
 	<sheet>gof_rocket_1</sheet>
-	<desc length="2" x="0" y="0" />
+	<desc length="3" x="0" y="0" />
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="15" y="4" />
@@ -268,7 +268,7 @@
 <animSheet name="gof_rocket_2" w="81" h="40" fw="27" fh="40">weapon_missile/gof_rocket_2.png</animSheet>
 <weaponAnim name="gof_rocket_2">
 	<sheet>gof_rocket_2</sheet>
-	<desc length="2" x="0" y="0" />
+	<desc length="3" x="0" y="0" />
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="15" y="4" />
@@ -286,7 +286,7 @@
 <animSheet name="gof_rocket_3" w="81" h="40" fw="27" fh="40">weapon_missile/gof_rocket_3.png</animSheet>
 <weaponAnim name="gof_rocket_3">
 	<sheet>gof_rocket_3</sheet>
-	<desc length="2" x="0" y="0" />
+	<desc length="3" x="0" y="0" />
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint x="15" y="4" />

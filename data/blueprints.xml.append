@@ -24,6 +24,7 @@ Fire Change: 10%
 Default Price: 50~   -   Selling Price:25~
 	</descriptionOverride>
 	<damage>1</damage>
+	<chainShot maxShots="1" sound="gofpulsefire1"/>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -31,7 +32,7 @@ Default Price: 50~   -   Selling Price:25~
 	<power>1</power>
 	<cost>50</cost>
 	<bp>2</bp>
-	<rarity>2</rarity>
+	<rarity>4</rarity>
 	<image>laser_pulse</image>
 	<boost>
 		<type>cooldown</type>
@@ -82,6 +83,7 @@ Fire Change: 10%
 Default Price: 60~   -   Selling Price:30~
 	</descriptionOverride>
 	<damage>1</damage>
+	<chainShot maxShots="2" sound="gofpulsefire2"/>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -142,6 +144,7 @@ Fire Change: 10%
 Default Price: 70~   -   Selling Price:35~
 	</descriptionOverride>
 	<damage>2</damage>
+	<chainShot maxShots="3" sound="gofpulsefire3"/>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -297,7 +300,7 @@ Default Price: 70~   -   Selling Price:35~
 	<cost>70</cost>
 	<bp>10</bp>
 	<speed>40</speed>
-	<rarity>4</rarity>
+	<rarity>3</rarity>
 	<projectiles>
 		<projectile count="8" fake="false">laser_thermo</projectile>
 		<projectile count="24" fake="true">laser_thermo</projectile>
@@ -339,6 +342,7 @@ Default Price: 70~   -   Selling Price:35~
 	<tooltip>Fires 2 shots capable of doing up to 4 damage.</tooltip>
 	<radius>30</radius>
 	<damage>1</damage>
+	<scatter name="GOF_SCATTER_1_PROJECTILE"/>
 	<shots>2</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -350,7 +354,7 @@ Default Price: 70~   -   Selling Price:35~
 	<bp>10</bp>
     <accuracyBonus>20</accuracyBonus>
 	<speed>30</speed>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<projectiles>
 		<projectile count="1" fake="false">gof_scatter_1_shot</projectile>
 	</projectiles>
@@ -426,6 +430,7 @@ Default Price: 70~   -   Selling Price:35~
 	<tooltip>Fires 2 shots capable of doing up to 6 damage.</tooltip>
 	<radius>25</radius>
 	<damage>1</damage>
+	<scatter name="GOF_SCATTER_2_PROJECTILE"/>
 	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -513,6 +518,7 @@ Default Price: 70~   -   Selling Price:35~
 	<tooltip>Fires 4 shots capable of doing up to 8 damage.</tooltip>
 	<radius>25</radius>
 	<damage>1</damage>
+	<scatter name="GOF_SCATTER_3_PROJECTILE"/>
 	<shots>4</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -598,6 +604,7 @@ Default Price: 70~   -   Selling Price:35~
 	<desc>"The M6 Series of beam lasers release a tremendous amount of energy, which almost immediately dispatch any target. Unfortunately, the M6 Series cannot match the fast reload time of pulse laser weapons."</desc>
 	<tooltip>Fires 1 beam that does 2 damage, and 1 damage to shields.</tooltip>
 	<damage>2</damage>
+	<shieldBeamable/>
 	<sp>-10</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
@@ -630,6 +637,7 @@ Default Price: 70~   -   Selling Price:35~
 	<desc>"Beam weapons are the sniper rifles of the cannon world. To use a beam weapon effectively, you must aim carefully. Their rate of fire is low, but the damage they inflict is enormous!"</desc>
 	<tooltip>Fires 1 beam that does 4 damage, and 2 damage to shields.</tooltip>
 	<damage>4</damage>
+	<shieldBeamable/>
 	<sp>-10</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
@@ -662,6 +670,7 @@ Default Price: 70~   -   Selling Price:35~
 	<desc>"Beam weapons are the sniper rifles of the cannon world. A good aim is rewarded with the greatest penetrating power of all automatic primary weapons."</desc>
 	<tooltip>Fires 1 beam that does 8 damage, and 4 damage to shields.</tooltip>
 	<damage>6</damage>
+	<shieldBeamable/>
 	<sp>-12</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
@@ -696,6 +705,7 @@ Default Price: 70~   -   Selling Price:35~
 	<tooltip>Fires 1 shots capable of doing 2 damage.</tooltip>
 	<radius>10</radius>
 	<damage>2</damage>
+	<manningWeapon damage="1" fireChance="10"/>
 	<sysDamage>-1</sysDamage>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -741,6 +751,7 @@ Default Price: 70~   -   Selling Price:35~
 	<tooltip>Fires 3 shots capable of doing 2 damage each.</tooltip>
 	<radius>10</radius>
 	<damage>2</damage>
+	<manningWeapon damage="1" sysDamage="1" fireChance="10"/>
 	<sysDamage>-1</sysDamage>
 	<shots>3</shots>
 	<sp>0</sp>
@@ -786,6 +797,7 @@ Default Price: 70~   -   Selling Price:35~
 	<tooltip>Fires 4 shots capable of doing 2 damage each.</tooltip>
 	<radius>10</radius>
 	<damage>2</damage>
+	<manningWeapon damage="1" sysDamage="1" fireChance="10"/>
 	<sysDamage>-1</sysDamage>
 	<shots>4</shots>
 	<sp>0</sp>
@@ -831,6 +843,7 @@ Default Price: 70~   -   Selling Price:35~
 	<tooltip>Fires 6 shots capable of doing 2 damage each.</tooltip>
 	<radius>10</radius>
 	<damage>2</damage>
+	<manningWeapon damage="1" sysDamage="1" fireChance="10"/>
 	<sysDamage>-1</sysDamage>
 	<shots>3</shots>
 	<sp>0</sp>
@@ -890,6 +903,7 @@ Fire Change: 10%
 Default Price: 30~   -   Selling Price:15~
 	</descriptionOverride>
 	<damage>0</damage>
+	<fractionalDamage damage="0.2" sysDamage="0.2" persDamage="3" affectShield="true"/>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -943,6 +957,7 @@ Fire Change: 10%
 Default Price: 40~   -   Selling Price:20~
 	</descriptionOverride>
 	<damage>0</damage>
+	<fractionalDamage damage="0.34" sysDamage="0.34" persDamage="5" affectShield="true"/>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -996,6 +1011,7 @@ Fire Change: 10%
 Default Price: 50~   -   Selling Price:25~
 	</descriptionOverride>
 	<damage>0</damage>
+	<fractionalDamage damage="0.5" sysDamage="0.5" persDamage="7.5" affectShield="true"/>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
@@ -1032,14 +1048,38 @@ Default Price: 50~   -   Selling Price:25~
 	<tip>tip_gof_rocket</tip>
 	<desc>"Missiles follow their trajectory until they hit a target or run out of fuel. The Edo guided missile is similar to the unguided Jet Rocket, though somewhat slower."</desc>
 	<tooltip>Fires 1 missile every 2 seconds, every missile does 23 damage but no shield breaching. Only has 5 missiles total.</tooltip>
+	<descriptionOverride>"Missiles follow their trajectory until they hit a target or run out of fuel. The Edo guided missile is similar to the unguided Jet Rocket, though somewhat slower."
+
+Stats:
+Required Power: 1
+Charge Time: 5 seconds
+Missile Consumption: 1
+
+Shots Per Charge: 1
+Max shots: 5
+
+Base Hull Damage: 3
+Total System Damage: 3
+Total Crew Damage: 45
+Fire Change: 10%
+
+Default Price: 50~   -   Selling Price:25~
+	</descriptionOverride>
 	<damage>3</damage>
+	<ammo amount="5"/>
 	<missiles>1</missiles>
 	<shots>1</shots>
+	<speed>40</speed>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<cooldown>5</cooldown>
 	<power>1</power>
 	<cost>50</cost>
+	<boost>
+		<type>cooldown</type>
+		<amount>0</amount>
+		<count>15</count>
+	</boost>
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>rocket_gof_1</image>
@@ -1070,14 +1110,37 @@ Default Price: 50~   -   Selling Price:25~
 	<tip>tip_gof_rocket</tip>
 	<desc>"Missiles, which have no guidance system, are better used at close range. The jet version is cheap and powerful and always worth having on-board for emergencies."</desc>
 	<tooltip>Fires 1 missile every 2 seconds, every missile does 23 damage but no shield breaching. Only has 10 missiles total.</tooltip>
+	<descriptionOverride>"Missiles, which have no guidance system, are better used at close range. The jet version is cheap and powerful and always worth having on-board for emergencies."
+
+Stats:
+Required Power: 2
+Charge Time: 5 seconds
+Missile Consumption: 1
+
+Shots Per Charge: 2
+Max shots: 10
+
+Base Hull Damage: 3
+Total System Damage: 3
+Total Crew Damage: 45
+Fire Change: 10%
+
+Default Price: 60~   -   Selling Price:30~
+	</descriptionOverride>
 	<damage>3</damage>
+	<ammo amount="10"/>
 	<missiles>1</missiles>
-	<shots>1</shots>
+	<shots>2</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
-	<cooldown>4</cooldown>
+	<cooldown>5</cooldown>
 	<power>2</power>
 	<cost>60</cost>
+	<boost>
+		<type>cooldown</type>
+		<amount>0</amount>
+		<count>15</count>
+	</boost>
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>rocket_gof_2</image>
@@ -1108,14 +1171,37 @@ Default Price: 50~   -   Selling Price:25~
 	<tip>tip_gof_rocket</tip>
 	<desc>"Behind the charming name lies a deadly missile, which wreaks destructive havoc while simultaneously attacking the electronics of its target. This characteristic makes it an unpredictable but interesting part of any arsenal."</desc>
 	<tooltip>Fires 1 missile every 2 seconds, every missile does 23 damage but no shield breaching. Only has 15 missiles total.</tooltip>
+	<descriptionOverride>"Missiles, which have no guidance system, are better used at close range. The jet version is cheap and powerful and always worth having on-board for emergencies."
+
+Stats:
+Required Power: 3
+Charge Time: 4 seconds
+Missile Consumption: 1
+
+Shots Per Charge: 3
+Max shots: 15
+
+Base Hull Damage: 3
+Total System Damage: 3
+Total Crew Damage: 45
+Fire Change: 10%
+
+Default Price: 60~   -   Selling Price:30~
+	</descriptionOverride>
 	<damage>3</damage>
+	<ammo amount="15"/>
 	<missiles>1</missiles>
-	<shots>1</shots>
+	<shots>3</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<cooldown>3</cooldown>
 	<power>3</power>
 	<cost>70</cost>
+	<boost>
+		<type>cooldown</type>
+		<amount>0</amount>
+		<count>15</count>
+	</boost>
 	<bp>2</bp>
 	<rarity>4</rarity>
 	<image>rocket_gof_3</image>
@@ -1250,7 +1336,7 @@ Default Price: 50~   -   Selling Price:25~
 		<name>The Mkkt Bkkt</name>
 		<desc>Once a dangerous Terran cruiser, now a weapon of pirates.</desc>
 		<systemList>
-			<cloaking power="1" room="1" start="false" img="room_cloaking" />
+			<cloaking power="1" room="1" start="true" img="room_cloaking" />
 			<clonebay power="1" room="4" start="false">
 				<slot>
 					<number>-1</number>
@@ -1313,8 +1399,8 @@ Default Price: 50~   -   Selling Price:25~
 			<drone name="AMPHI_DEFENSE" />
 		</droneList>
 		<health amount="45" />
-		<maxPower amount="9" />
-		<crewCount amount="1" class="human" />
+		<maxPower amount="8" />
+		<crewCount amount="1" class="human_soldier" />
 		<crewCount amount="1" class="human_engineer" />
 	</shipBlueprint>
 
@@ -1336,7 +1422,7 @@ Default Price: 50~   -   Selling Price:25~
 					<number>1</number>
 				</slot>
 			</doors>
-			<drones power="1" max="8" room="9" start="false" img="room_drones_2" />
+			<drones power="2" max="8" room="9" start="false" img="room_drones_2" />
 			<engines power="2" room="6" start="true" img="room_engines_2">
 				<slot>
 					<direction>down</direction>
