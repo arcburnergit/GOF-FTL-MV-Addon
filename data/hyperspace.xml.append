@@ -230,7 +230,7 @@
 	<variable name="gofEnemyShield" op="set" val="0"/>
 	<variable name="gofPlayerHull" op="set" val="0"/>
 	<variable name="gofPlayerShield" op="set" val="0"/>
-  	<bossShip yOffset="-20">GOF_ANAAN</bossShip>
+  	<bossShip yOffset="100">GOF_ANAAN</bossShip>
   	<eventFile>special_gof</eventFile>
 </events>
 <!-- end of chunk -->
