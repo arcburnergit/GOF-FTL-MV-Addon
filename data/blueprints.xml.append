@@ -137,7 +137,7 @@ Shots Per Charge: 1
 
 Base Hull Damage: 2
 Total System Damage: 2
-Total Crew Damage: 15
+Total Crew Damage: 30
 
 Fire Change: 10%
 
@@ -1186,7 +1186,7 @@ Total System Damage: 3
 Total Crew Damage: 45
 Fire Change: 10%
 
-Default Price: 60~   -   Selling Price:30~
+Default Price: 70~   -   Selling Price:35~
 	</descriptionOverride>
 	<damage>3</damage>
 	<ammo amount="15"/>
