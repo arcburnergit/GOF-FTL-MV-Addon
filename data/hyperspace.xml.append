@@ -2,6 +2,7 @@
 <FTL>
 <mod:findLike type="scripts">
   <mod-append:script>data/gof_scripts/gof_weapon_functions.lua</mod-append:script>
+  <!--mod-append:script>data/gof_scripts/gofIcon.lua</mod-append:script>
   <!--mod-append:script>data/gof_scripts/gof_ai_functions.lua</mod-append:script-->
 </mod:findLike>
 

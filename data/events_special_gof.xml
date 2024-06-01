@@ -1,4 +1,14 @@
 <FTL>
+<event name="ADDON_GOF">
+    <text>FTL: GALAXY ON FIRE
+Developed by: Arc
+Currently Enabled.
+        
+Adds 3 ships, 40 new weapons, 2 new crew, and 1 new event based on the galaxy on fire franchise. All weapons function in completely new ways never seen before using brand new lua functions.
+        
+To enable Galaxy On Fire, go to the Multiverse Forums and visit the addon section!</text>
+</event>
+
     <event name="GOF_WEAPON_TRADE">
         <preventQuest />
         <beaconType id="map_icon_gof_wt" global="true">

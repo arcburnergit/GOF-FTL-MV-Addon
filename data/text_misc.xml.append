@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FTL>
+<text name="ship_PLAYER_SHIP_GOF_ANAAN_2_unlock">Get to sector 5 with the type A.</text>
+<text name="ship_PLAYER_SHIP_GOF_ANAAN_3_unlock">Get to sector 5 with the type B or win the game with the type A.</text>
 
 <text name="map_icon_gof_wt">DISTRESS</text>
   
