@@ -64,9 +64,9 @@ Default Price: 50~   -   Selling Price:25~
 	<title>Nirai Impulse EX 2</title>
 	<short>Impulse EX 2</short>
 	<tip>tip_gof_pulse</tip>
-	<desc>"The Nirai company once specialized in low cost mass-market prodiuctions. Unfortunately there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."</desc>
+	<desc>"The Nirai company once specialized in low cost mass-market productions. Unfortunately there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."</desc>
 	<tooltip>Pulse laser; 1 damage, 1 base shot. 6 second base cooldown. Cooldown increases by 3 and shots increase by 1 per volley.</tooltip>
-	<descriptionOverride>"The Nirai company once specialized in low cost mass-market prodiuctions. Unfortunately there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."
+	<descriptionOverride>"The Nirai company once specialized in low cost mass-market productions. Unfortunately there was an incident in which an entire batch of Laser FX series exploded simultaneously in various locations around the galaxy, due to a date error in the on-board computer software. After the hasty closure of all the Nirai factories in Festus and Dima, no new weapons were manufactured. The lasers of the EX series are a living relic."
 
 Stats:
 Required Power: 2
@@ -1408,7 +1408,7 @@ Default Price: 70~   -   Selling Price:35~
 	<shipBlueprint name="PLAYER_SHIP_GOF_ANAAN_3" layout="gofp_anaan_c" img="gofp_anaan_c">
 		<class>Anaan</class>
 		<name>The Gunant</name>
-		<desc>One of the elite terren vessels, how it even got out here, the crew still aren't even sure.</desc>
+		<desc>One of the elite Terran vessels, how it even got out here, the crew still aren't even sure.</desc>
 		<unlock id="ship_PLAYER_SHIP_GOF_ANAAN_3_unlock"/>
 		<systemList>
 			<battery power="1" room="10" start="false" img="room_battery_2" />
